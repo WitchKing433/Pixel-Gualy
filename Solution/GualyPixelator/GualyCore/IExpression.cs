@@ -8,6 +8,8 @@ namespace GualyCore
 {
     public interface IExpression
     {
+        public CodeLocation Location { get; set; }
+
         public object Evaluate();
     }
 }

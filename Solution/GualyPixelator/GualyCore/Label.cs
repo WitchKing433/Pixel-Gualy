@@ -17,9 +17,5 @@ namespace GualyCore
             labelName = name;
             codeLine = i;
         }
-        public Color[,] ChangePixelMap(Color[,] previusPixelMap)
-        {
-            return previusPixelMap;
-        }
     }
 }

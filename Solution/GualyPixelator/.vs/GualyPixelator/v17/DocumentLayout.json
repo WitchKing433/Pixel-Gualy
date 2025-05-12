@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\arithmeticfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\arithmeticfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\arithmeticexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\arithmeticexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\number.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\number.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\iexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\iexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\lexicalanalysisprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\lexicalanalysisprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\interpreter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\tokensnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\tokensnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\gualylexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\gualylexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualylexer\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDB72F89-D6DD-6B9C-8802-17E6B780D584}|GualyLexer\\GualyLexer.csproj|solutionrelative:gualylexer\\tokenstream.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +54,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ArithmeticFunction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticFunction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ArithmeticFunction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticFunction.cs",
-              "RelativeToolTip": "GualyCore\\ArithmeticFunction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Number.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Number.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Number.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Number.cs",
+              "RelativeToolTip": "GualyCore\\Number.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T20:10:44.571Z",
+              "WhenOpened": "2025-05-11T23:43:23.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Text.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Text.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Text.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Text.cs",
+              "RelativeToolTip": "GualyCore\\Text.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:39:15.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IExpression.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IExpression.cs",
+              "RelativeDocumentMoniker": "GualyCore\\IExpression.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IExpression.cs",
+              "RelativeToolTip": "GualyCore\\IExpression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:32:35.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ArithmeticExpression.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticExpression.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ArithmeticExpression.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticExpression.cs",
-              "RelativeToolTip": "GualyCore\\ArithmeticExpression.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Title": "Variable.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Variable.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Variable.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Variable.cs",
+              "RelativeToolTip": "GualyCore\\Variable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T20:10:16.012Z",
+              "WhenOpened": "2025-05-11T23:21:22.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Interpreter.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\Interpreter.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\Interpreter.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\Interpreter.cs",
+              "RelativeToolTip": "GualyLexer\\Interpreter.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T23:00:22.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LexicalAnalysisProcess.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\LexicalAnalysisProcess.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\LexicalAnalysisProcess.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\LexicalAnalysisProcess.cs",
+              "RelativeToolTip": "GualyLexer\\LexicalAnalysisProcess.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwCYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:58:22.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\Token.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\Token.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\Token.cs",
+              "RelativeToolTip": "GualyLexer\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:51:36.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TokensNames.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\TokensNames.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\TokensNames.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\TokensNames.cs",
+              "RelativeToolTip": "GualyLexer\\TokensNames.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:52:38.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\Parser.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\Parser.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\Parser.cs",
+              "RelativeToolTip": "GualyLexer\\Parser.cs",
+              "ViewState": "AgIAAGEBAAAAAAAAAAApwG8BAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:45:01.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GualyLexer.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\GualyLexer.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\GualyLexer.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\GualyLexer.cs",
+              "RelativeToolTip": "GualyLexer\\GualyLexer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAjwBIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T22:28:56.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TokenStream.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\TokenStream.cs",
+              "RelativeDocumentMoniker": "GualyLexer\\TokenStream.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyLexer\\TokenStream.cs",
+              "RelativeToolTip": "GualyLexer\\TokenStream.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwvzsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T21:47:38.38Z",
               "EditorCaption": ""
             }
           ]

@@ -8,10 +8,18 @@ namespace GualyCore
 {
     public class ExpressionValue : IExpression
     {
-        protected object value;
+        public object Value {  get; private set; }
+
+        public CodeLocation Location { get; set; }
+
+        public ExpressionValue(object value)
+        {
+            Value = value;
+        }
+
         public object Evaluate()
         {
-            return value;
+            return Value;
         }
     }
 }

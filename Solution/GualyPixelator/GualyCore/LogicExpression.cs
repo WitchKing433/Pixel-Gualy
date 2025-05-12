@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public abstract class LogicExpression : IExpression
+    public abstract class LogicExpression : Expression
     {
-        public abstract object Evaluate();
+        protected LogicExpression(CodeLocation location) : base(location)
+        {
+        }
 
-        public bool LogicEvaluate()
+        public virtual bool LogicEvaluate()
         {
             return (bool)Evaluate();
         }   

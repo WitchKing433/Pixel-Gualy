@@ -8,7 +8,7 @@ namespace GualyCore
 {
     internal class EqualComparator : Comparator, IExpression
     {
-        public object Evaluate()
+        public override object Evaluate()
         {
             return leftOperand.ArithmeticEvaluate() == rightOperand.ArithmeticEvaluate();
         }
