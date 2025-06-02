@@ -40,27 +40,41 @@ namespace Lexer
                 text = "";
                 if (code[i] == ' ')
                     continue;
-                if (code[i] == '\n')
+                else if (code[i] == '\n')
                 {
                     tokens.Add(new Token(TokenType.Symbol, "\n",(row,col)));
                     col = 0;
                     row++;
                     continue;
                 }
-                if (MatchNumber(code[i].ToString()))
+                else if (MatchNumber(code[i].ToString()))
                 {
                     tokens.Add(MatchString(MatchNumber, TokenType.Number));
                     continue;
                 }
-                if (MatchWord(code[i].ToString()))
+                else if (MatchWord(code[i].ToString()))
                 {
                     tokens.Add(MatchString(MatchWord, TokenType.Text));
                     continue;
                 }
-                if (MatchOperator(code[i].ToString()))
+                else if (MatchOperator(code[i].ToString()))
                 {
-                    tokens.Add(MatchString(MatchOperator, TokenType.Symbol));
+                    Token op = MatchString(MatchOperator, TokenType.Operator);
+                    if (operators.ContainsKey(op.Value))
+                    {
+                        tokens.Add(op);
+                    }
+                    else
+                        errors.Add(new Error("Invalid operator", op.Location));
                     continue;
+                }
+                else if (MatchSymbol(code[i].ToString()))
+                {
+                    tokens.Add(MatchString(MatchSymbol, TokenType.Symbol));
+                }
+                else
+                {
+                    errors.Add(new Error("Syntax error", (row, col)));
                 }
 
             }
@@ -87,7 +101,14 @@ namespace Lexer
             {
                 text += code[i];
             }
-            Token token = new Token(type, text, (row, col));
+            if(type == TokenType.Text)
+            {
+                if(MatchFunction(text))
+                    type = TokenType.Function;
+                else if(MatchInstruction(text))
+                    type = TokenType.Instruction;
+            }
+            Token token = new Token(type, text, (row, col - text.Length));
             i--;
             col--;
             return token;
@@ -99,16 +120,24 @@ namespace Lexer
         }
         bool MatchWord(string word)
         {
-            Regex regex = new Regex(@"^");
+            Regex regex = new Regex(@"^[a-zA-Z][a-zA-Z0-9_]*$");
             return regex.IsMatch(word);
         }
         bool MatchOperator(string op)
         {
-            if (operatorsParts.Contains(op))
-                return true;
-            if (operators.ContainsKey(op))
-                return true;
-            return false;
+            return operatorsParts.Contains(op) || operators.ContainsKey(op);
+        }
+        bool MatchFunction(string text)
+        {
+            return functions.ContainsKey(text);
+        }
+        bool MatchInstruction(string text)
+        {
+            return instructions.ContainsKey(text);
+        }
+        bool MatchSymbol(string symbol)
+        {
+            return symbols.ContainsKey(symbol);
         }
 
         void RegisterAll()
@@ -138,6 +167,7 @@ namespace Lexer
             RegisterOperator("<-", TokensNames.Assign);
             RegisterSymbol("\n", TokensNames.StatementSeparator);
             RegisterSymbol(",", TokensNames.ParametersSeparator);
+            RegisterSymbol("\"", TokensNames.DoubleQuotes);
 
             RegisterOperator("(", TokensNames.OpenBracket);
             RegisterOperator(")", TokensNames.ClosedBracket);
@@ -168,15 +198,15 @@ namespace Lexer
         }
         void RegisterSymbol(string symbol, string name)
         {
-            operators[symbol] = name;
+            symbols[symbol] = name;
         }
         void RegisterInstruction(string instr, string name)
         {
-            operators[instr] = name;
+            instructions[instr] = name;
         }
         void RegisterFunction(string funct, string name)
         {
-            operators[funct] = name;
+            functions[funct] = name;
         }
     }
 }

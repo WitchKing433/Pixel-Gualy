@@ -9,11 +9,12 @@ namespace GualyCore
     public abstract class Instruction : ILineNode
     {
         public CodeLocation location;
-        public List<IExpression> parameters = new List<IExpression>();
+        public List<IExpression> parameters;
 
-        public Instruction(CodeLocation location)
+        public Instruction(CodeLocation location, List<IExpression> parameters)
         {
             this.location = location;
+            this.parameters = parameters;
         }
 
         public void AddParameter(IExpression expression)

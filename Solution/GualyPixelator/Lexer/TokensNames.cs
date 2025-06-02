@@ -23,14 +23,13 @@
         public const string Assign = "Assign"; // <-
         public const string StatementSeparator = "StatementSeparator"; // \n
         public const string ParametersSeparator = "ParametersSeparator"; // ,
+        public const string DoubleQuotes = "DoubleQuotes"; // "
 
         public const string OpenBracket = "OpenBracket"; // (
         public const string ClosedBracket = "ClosedBracket"; // )
         public const string OpenSquareBracket = "OpenSquareBracket"; // [
         public const string ClosedSquareBracket = "ClosedSquareBracket"; // ]
 
-        public const string True = "True";
-        public const string False = "False";
         public const string GoTo = "GoTo";
 
         //Instructions

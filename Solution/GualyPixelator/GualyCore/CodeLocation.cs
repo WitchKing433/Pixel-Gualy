@@ -8,9 +8,15 @@ namespace GualyCore
 {
     public class CodeLocation
     {
-        public string File;
-        public int Line;
-        public int Begin;
-        public int End;
+        public CodeLocation(int line, int begin,int end)
+        {
+            Line = line;
+            Begin = begin;
+            End = end;
+        }
+
+        public int Line {  get; set; }
+        public int Begin {  get; set; }
+        public int End {  get; set; }
     }
 }

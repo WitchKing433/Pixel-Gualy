@@ -31,6 +31,7 @@ namespace Lexer
         Instruction,
         Symbol,
         Text,
-        Function
+        Function,
+        Operator
     }
 }

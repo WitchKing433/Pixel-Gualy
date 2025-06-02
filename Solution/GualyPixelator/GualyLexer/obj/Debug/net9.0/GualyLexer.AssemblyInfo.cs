@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GualyLexer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+838c3fd37eb8ede5bd5dbf15d40650e06044ad7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ab91eae53745ee5a4216ab47127ccb76a79159f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GualyLexer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GualyLexer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,7 +8,7 @@ namespace GualyCore
 {
     public class Spawn : Instruction
     {
-        public Spawn(CodeLocation location) : base(location)
+        public Spawn(CodeLocation location, List<IExpression> parameters) : base(location,parameters)
         {
 
         }

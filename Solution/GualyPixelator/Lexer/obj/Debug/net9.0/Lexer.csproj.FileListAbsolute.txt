@@ -3,3 +3,10 @@ D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\Lexer.AssemblyInfo.cs
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\Lexer.csproj.CoreCompileInputs.cache
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\Lexer.sourcelink.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\bin\Debug\net9.0\Lexer.deps.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\bin\Debug\net9.0\Lexer.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\bin\Debug\net9.0\Lexer.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\Lexer.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\refint\Lexer.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\Lexer.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Lexer\obj\Debug\net9.0\ref\Lexer.dll
