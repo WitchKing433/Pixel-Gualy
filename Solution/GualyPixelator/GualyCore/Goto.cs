@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class Goto : ILineNode, IExecutable
+    public class GoTo : ILineNode
     {
         string destinLabel;
+        LogicExpression expression;
 
-        public Goto(string a) 
+        public GoTo(string label, CodeLocation location, LogicExpression expression) 
         {
-            destinLabel = a;
+            destinLabel = label;
+            this.expression = expression;
         }
-        public void Execute()
+
+        public ProgramState Execute(ProgramState programState)
         {
             throw new NotImplementedException();
         }

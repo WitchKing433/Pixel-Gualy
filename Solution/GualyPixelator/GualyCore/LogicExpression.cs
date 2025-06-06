@@ -10,11 +10,7 @@ namespace GualyCore
     {
         protected LogicExpression(CodeLocation location) : base(location)
         {
+            type = typeof(bool);
         }
-
-        public virtual bool LogicEvaluate()
-        {
-            return (bool)Evaluate();
-        }   
     }
 }

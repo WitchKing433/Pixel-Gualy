@@ -1,0 +1,6 @@
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.csproj.AssemblyReference.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.GeneratedMSBuildEditorConfig.editorconfig
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.AssemblyInfoInputs.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.AssemblyInfo.cs
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.csproj.CoreCompileInputs.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.sourcelink.json

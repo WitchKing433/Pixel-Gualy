@@ -17,6 +17,10 @@ namespace GualyCore
             Location = location;
             this.type = type;
         }
+        public Expression(CodeLocation location)
+        {
+            Location = location;
+        }
         public abstract object Evaluate(ProgramState programState);
     }
 }

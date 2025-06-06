@@ -8,6 +8,7 @@ namespace GualyCore
 {
     public class ProgramState
     {
+        public int index;
         public Color[,] pixelMap;
         public int brushSize;
         public Color brushColor;
