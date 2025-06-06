@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class Spawn : Instruction
+    public class DrawLineInstruction : Instruction
     {
-        public Spawn(CodeLocation location, List<Expression> parameters) : base(location,parameters)
+        public DrawLineInstruction(CodeLocation location, List<Expression> parameters) : base(location, parameters)
         {
-
         }
 
-        public override Color[,] ChangePixelMap(Color[,] previusPixelMap)
+        public override ProgramState Execute(ProgramState programState)
         {
             throw new NotImplementedException();
         }
-
     }
 }

@@ -5,8 +5,11 @@ namespace Parser
     public class Parser
     {
         Dictionary<string, List<Type>> admissibleParameters = new Dictionary<string,List<Type>>();
+        Dictionary<string,string> instructionParameters = new Dictionary<string,string>();
         List<Token> tokens;
         List<Error> errors;
+        public Dictionary<string, int> labels;
+        public Dictionary<string, Expression> variables;
         List<ILineNode> program;
         public List<Error> Errors {  get { return errors; } private set { } }
         int i = 0;
@@ -14,28 +17,43 @@ namespace Parser
         {
             this.tokens = tokens;
             errors = new List<Error>();
+            program = new List<ILineNode>();
             RegisterParameters();
         }
 
         public List<ILineNode> Parse()
         {
+            program = new List<ILineNode>();
             i = 0;
+            if (i < tokens.Count)
+                ParseSpawn();
+            else
+                AddError("Blank Code");
             for (; i < tokens.Count; i++)
             {
-
+                if (tokens[i].Type == TokenType.Instruction)
+                {
+                    ParseInstruction();
+                    continue;
+                }
+                else if(tokens[i].Type == TokenType.Text)
+                {
+                    ParseText();
+                    continue;
+                }
             }
         }
 
         bool ParseSpawn()
         {
-            if (tokens[0].Value == "Spawn")
+            if (IsInRange() && tokens[0].Value == "Spawn")
             {
                 (int, int) location = tokens[0].Location;
                 i++;
-                List<IExpression> parameters = ParseParameters();
+                List<Expression> parameters = ParseParameters();
                 if (ValidateParameters(parameters, "int,int"))
                 {
-                    if (i + 1 < tokens.Count && (tokens[i + 1].Value == "\n"))
+                    if (EndOfLine())
                         program.Add(new Spawn(BuildLocation(location),parameters));
                     else
                     {
@@ -56,10 +74,78 @@ namespace Parser
             }
             return true;
         }
-        List<IExpression> ParseParameters()
+        bool ParseInstruction()
         {
-            List<IExpression> parameters = new List<IExpression>();
-            if (tokens[i].Value != "(")
+            Token instruction = tokens[i];
+            if (instruction.Value == "Spawn")
+            {
+                AddError("Spawn can only be used on the first line and as the first instruction");
+                return false;
+            }
+            i++;
+            List<Expression> parameters = ParseParameters();
+            if (ValidateParameters(parameters, instructionParameters[instruction.Value]))
+            {
+                if (EndOfLine())
+                    return AddInstruction(parameters, instruction);
+                else
+                {
+                    AddError("EndOfLine expected");
+                    return false;
+                }
+            }
+            else
+            {
+                AddError("Invalid parameters");
+                return false;
+            }
+
+        }
+        bool ParseText()
+        {
+            Token text = tokens[i];
+            if (EndOfLine())
+            {
+                program.Add(new Label(text.Value, BuildLocation(text.Location)));
+                i++;
+                return true;
+            }
+            i++;
+            if (tokens[i].Value == "<-")
+            {
+                i++;
+                Expression expression = ParseExpression();              //revisar despues donde deja el puntero parse expression 
+                if(expression == null)
+                {
+                    AddError("Invalid expression");
+                    return false;
+                }
+                if (!EndOfLine())
+                {
+                    AddError("EndOfLine expected");
+                    return false;
+                }
+                variables[text.Value] = expression;
+                program.Add(new AssignmentExpression(text.Value, expression, BuildLocation(text.Location)));
+                return true;
+            }
+            AddError("EndOfLine or <- expected");
+            return false;
+        }
+        Variable ParseVariable()
+        {
+            if (variables.ContainsKey(tokens[i].Value))
+            {
+                return new Variable(tokens[i].Value, BuildLocation(tokens[i].Location), variables[tokens[i].Value].ExprType);
+            }
+            AddError("Missing variable");
+            return null;
+        }
+
+        List<Expression> ParseParameters()
+        {
+            List<Expression> parameters = new List<Expression>();
+            if (!IsInRange() || tokens[i].Value != "(")
             {
                 AddError("( expected");
             }
@@ -76,21 +162,21 @@ namespace Parser
                     i--;
                 }
             }
-            if(i == tokens.Count)
+            if(!IsInRange())
                 AddError(") expected");
             return parameters;
         }
-        IExpression ParseExpression()
+        Expression ParseExpression()
         {
             throw new NotImplementedException();
         }
-        bool ValidateParameters(List<IExpression> parameters, string sequence)
+        bool ValidateParameters(List<Expression> parameters, string sequence)
         {
             if(parameters.Count != admissibleParameters[sequence].Count)
                 return false;
             for(int j = 0;j < parameters.Count; j++)
             {
-                if (parameters[j] == null || (parameters[j].GetType() != admissibleParameters[sequence][j]))
+                if (parameters[j] == null || (parameters[j].ExprType != admissibleParameters[sequence][j]))
                 {
                     return false;
                 }
@@ -110,7 +196,20 @@ namespace Parser
         {
             errors.Add(new Error(text, tokens[i].Location));
         }
-
+        bool AddInstruction(List<Expression> parameters, Token instruction)
+        {
+            program.Add(Instruction.BuildInstruction(BuildLocation(instruction.Location), parameters, instruction.Value));
+            i++;
+            return true;
+        }
+        bool EndOfLine()
+        {
+            return i + 1 < tokens.Count && tokens[i + 1].Value == "\n";
+        }
+        bool IsInRange()
+        {
+            return i < tokens.Count;
+        }
         void RegisterParameters()
         {
             admissibleParameters[""] = new List<Type>();
@@ -123,6 +222,15 @@ namespace Parser
             admissibleParameters["string,int,int"] = new List<Type> { typeof(string), typeof(int), typeof(int) };
             admissibleParameters["string,int,int,int,int"] = new List<Type> { typeof(string), typeof(int), typeof(int), typeof(int), typeof(int) };
 
+        }
+        void RegisterInstructionParameters()
+        {
+            instructionParameters["Color"] = "string";
+            instructionParameters["Size"] = "int";
+            instructionParameters["DrawLine"] = "int,int,int";
+            instructionParameters["DrawCircle"] = "int,int,int";
+            instructionParameters["DrawRectangle"] = "int,int,int,int,int";
+            instructionParameters["Fill"] = "";
         }
     }
 }

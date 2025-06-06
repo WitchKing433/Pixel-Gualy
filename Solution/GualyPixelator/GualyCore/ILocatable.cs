@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public interface IExpression
+    public interface ILocatable
     {
-        public CodeLocation Location { get; set; }
-
-        public object Evaluate();
+        public CodeLocation GetLocation();
     }
 }

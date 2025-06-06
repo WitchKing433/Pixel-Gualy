@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    internal class AndOperator : LogicOperator, IExpression
+    public class AndOperator : LogicOperator, Expression
     {
         public override object Evaluate()
         {

@@ -6,16 +6,26 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class Label : ILineNode
+    public class Label : ILineNode, ILocatable
     {
         private string labelName;
-        private int codeLine;
-        public string LabelName { get { return labelName; } set { labelName = value; } } 
+        CodeLocation location;
+        public string LabelName { get { return labelName; } private set { } } 
 
-        public Label(string name, int i)
+        public Label(string name, CodeLocation location)
         {
             labelName = name;
-            codeLine = i;
+            this.location = location;
+        }
+
+        public CodeLocation GetLocation()
+        {
+            return location;
+        }
+
+        public ProgramState Execute(ProgramState programState)
+        {
+            return programState;
         }
     }
 }

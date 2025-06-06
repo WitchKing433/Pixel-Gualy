@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    internal class GreaterEqualComparator : Comparator, IExpression
+    public class GreaterEqualComparator : Comparator, Expression
     {
         public override object Evaluate()
         {

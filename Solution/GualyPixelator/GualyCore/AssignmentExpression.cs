@@ -6,12 +6,23 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class AssignmentExpression : IExecutable, ILineNode
+    public class AssignmentExpression : ILineNode
     {
+        string name;
+        Expression expression;
+        CodeLocation location;
 
-        public void Execute()
+        public AssignmentExpression(string name, Expression expression, CodeLocation location)
         {
-            throw new NotImplementedException();
+            this.name = name;
+            this.expression = expression;
+            this.location = location;
+        }
+
+        public ProgramState Execute(ProgramState programState)
+        {
+            programState.variables[name] = expression.Evaluate(programState);
+            return programState;
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface ILineNode
     {
-
+        public abstract ProgramState Execute(ProgramState programState);
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class BoolExpression : IExpression
+    public class BoolExpression : Expression
     {
     }
 }

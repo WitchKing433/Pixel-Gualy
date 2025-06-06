@@ -9,19 +9,15 @@ namespace GualyCore
     public class Variable : Expression
     {
         public string Name {  get; private set; }
-        Dictionary<string, ExpressionValue> variables;
 
-        public Variable(string name, Dictionary<string,ExpressionValue> variables, CodeLocation location) : base(location)
+        public Variable(string name, CodeLocation location,Type type) : base(location, type)
         {
             Name = name;
-            this.variables = variables;
         }
 
-        public override object Evaluate()
+        public override object Evaluate(ProgramState programState)
         {
-            if(variables.TryGetValue(Name, out var value))
-                return value.Evaluate();
-            throw new Exception($"Missing variable '{Name}'");
+            return programState.variables[Name];
         }
     }
 }

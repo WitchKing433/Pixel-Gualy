@@ -8,21 +8,34 @@ namespace GualyCore
 {
     public abstract class Instruction : ILineNode
     {
-        public CodeLocation location;
-        public List<IExpression> parameters;
+        public CodeLocation Location {  get; private  set; }
+        protected List<Expression> parameters;
 
-        public Instruction(CodeLocation location, List<IExpression> parameters)
+        public Instruction(CodeLocation location, List<Expression> parameters)
         {
-            this.location = location;
+            Location = location;
             this.parameters = parameters;
         }
-
-        public void AddParameter(IExpression expression)
+        public static Instruction BuildInstruction(CodeLocation location, List<Expression> parameters, string instruction)
         {
-            parameters.Add(expression);
-        }
+            switch (instruction)
+            {
+                case "Color": { return new ColorInstruction(location, parameters); }
 
-        public abstract Color[,] ChangePixelMap(Color[,] previusPixelMap);
+                case "Size": { return new SizeInstruction(location, parameters); }
+
+                case "DrawLine": { return new DrawLineInstruction(location, parameters); }
+
+                case "DrawCircle": { return new ColorInstruction(location, parameters); }
+
+                case "DrawRectangle": { return new DrawRectangleInstruction(location, parameters); }
+
+                case "Fill": { return new FillInstruction(location, parameters); }
+                    
+                default : { throw new Exception("Invalid Instruction"); }
+            }
+        }
+        public abstract ProgramState Execute(ProgramState programState);
 
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class ExpressionValue : IExpression
+    public class ExpressionValue : Expression
     {
         public object Value {  get; private set; }
 
