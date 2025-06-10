@@ -169,8 +169,8 @@ namespace Lexer
             RegisterSymbol(",", TokensNames.ParametersSeparator);
             RegisterSymbol("\"", TokensNames.DoubleQuotes);
 
-            RegisterOperator("(", TokensNames.OpenBracket);
-            RegisterOperator(")", TokensNames.ClosedBracket);
+            RegisterSymbol("(", TokensNames.OpenBracket);
+            RegisterSymbol(")", TokensNames.ClosedBracket);
             RegisterSymbol("[", TokensNames.OpenSquareBracket);
             RegisterSymbol("]", TokensNames.ClosedSquareBracket);
 

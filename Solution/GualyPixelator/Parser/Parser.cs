@@ -315,6 +315,7 @@ namespace Parser
         Expression ?ParseArithmeticExpression(int left, int right)
         {
             Expression leftExpression;
+            Expression rightExpression;
             i = left;
             string oper = "";
             int operIndex;
@@ -322,8 +323,18 @@ namespace Parser
             {
                 for(; IsInRange() && i <= right; i++)
                 {
-                    if (tokens[i].Type)
+                    if (tokens[i].Type == TokenType.Operator && operatorPrecedence.ContainsKey(tokens[i].Value))
+                    {
+                        if (operatorPrecedence[tokens[i].Value] <= operatorPrecedence[oper])
+                        {
+                            oper = tokens[i].Value;
+                            operIndex = i;
+                        }
+                    }
                 }
+                leftExpression = ParseArithmeticExpression(left, right);
+                rightExpression = ParseArithmeticExpression(right, operIndex);
+                return ArithmeticOperator.BuildOperator();
                 for (; IsInRange() && i < right; i++)
                 {
                     
