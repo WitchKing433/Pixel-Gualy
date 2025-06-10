@@ -8,13 +8,13 @@ namespace GualyCore
 {
     public class Pow : ArithmeticOperator
     {
-        public Pow(CodeLocation location) : base(location)
+        public Pow(CodeLocation location, Type type, ArithmeticExpression leftOperand, ArithmeticExpression rightOperand) : base(location, type, leftOperand, rightOperand)
         {
         }
 
-        public override object Evaluate()
+        public override object Evaluate(ProgramState programState)
         {
-            return Math.Pow(LeftOperand.ArithmeticEvaluate(), RightOperand.ArithmeticEvaluate());
+            return Math.Pow(leftOperand.ArithmeticEvaluate(programState), rightOperand.ArithmeticEvaluate(programState));
         }
     }
 }

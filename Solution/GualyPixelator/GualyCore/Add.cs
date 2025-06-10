@@ -8,13 +8,14 @@ namespace GualyCore
 {
     public class Add : ArithmeticOperator
     {
-        public Add(CodeLocation location) : base(location)
+        public Add(CodeLocation location, Type type, ArithmeticExpression leftOperand, ArithmeticExpression rightOperand) : base(location, type, leftOperand, rightOperand)
         {
+
         }
 
-        public override object Evaluate()
+        public override object Evaluate(ProgramState programState)
         {
-            return LeftOperand.ArithmeticEvaluate() + RightOperand.ArithmeticEvaluate();
+            return leftOperand.ArithmeticEvaluate(programState) + rightOperand.ArithmeticEvaluate(programState);
         }
     }
 }

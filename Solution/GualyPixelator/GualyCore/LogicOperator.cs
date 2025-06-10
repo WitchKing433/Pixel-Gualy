@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public abstract class LogicOperator : LogicExpression
+    public abstract class LogicOperator : Expression
     {
-        protected LogicExpression leftOperand;
-        protected LogicExpression rightOperand;
+        protected Expression leftOperand;
+        protected Expression rightOperand;
     }
 }

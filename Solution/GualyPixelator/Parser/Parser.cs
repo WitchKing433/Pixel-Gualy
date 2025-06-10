@@ -4,10 +4,18 @@ namespace Parser
 {
     public class Parser
     {
+        List<List<string>> listOperatorPrecedence = new List<List<string>>
+        {
+            new List<string>{"+","-"},
+            new List<string>{"*","/","%"},
+            new List<string>{"**"}
+
+        };
         Dictionary<string, List<Type>> admissibleParameters = new Dictionary<string,List<Type>>();
         Dictionary<string,string> instructionParameters = new Dictionary<string,string>();
         Dictionary<string, string> functionParameters = new Dictionary<string, string>();
         Dictionary<string,Type> functionsType = new Dictionary<string, Type>();
+        Dictionary<string, int> operatorPrecedence = new Dictionary<string, int>();
         List<Token> tokens;
         List<Error> errors;
         public Dictionary<string, int> labels;
@@ -44,6 +52,10 @@ namespace Parser
                     continue;
                 }
             }
+            if (errors.Count > 0)
+                return null;
+            else
+                return program;
         }
 
         bool ParseSpawn()
@@ -132,7 +144,8 @@ namespace Parser
                     }
                     else
                     {
-                        expression = ParseExpression();              //revisar despues donde deja el puntero parse expression 
+                        i++;
+                        expression = ParseArithmeticExpression(i,tokens.Count);              //revisar despues donde deja el puntero parse expression 
                     }
                     if (expression == null)
                     {
@@ -172,7 +185,7 @@ namespace Parser
             bool unParseable = false;
             Token goTo = tokens[i];
             string label = "";
-            LogicExpression expression;
+            Expression expression;
             i++;
             if (IsInRange())
             {
@@ -286,7 +299,7 @@ namespace Parser
                 i++;
             for (; i < tokens.Count && tokens[i].Value != ")"; i++)
             {
-                parameters.Add(ParseExpression());
+                parameters.Add(ParseArithmeticExpression(i, tokens.Count));
                 if (tokens[i].Value == ")") 
                     break;
                 if (tokens[i].Value != ",")
@@ -299,11 +312,65 @@ namespace Parser
                 AddError(") expected");
             return parameters;
         }
-        Expression ParseExpression()
+        Expression ?ParseArithmeticExpression(int left, int right)
         {
-            throw new NotImplementedException();
+            Expression leftExpression;
+            i = left;
+            string oper = "";
+            int operIndex;
+            if (IsInRange())
+            {
+                for(; IsInRange() && i <= right; i++)
+                {
+                    if (tokens[i].Type)
+                }
+                for (; IsInRange() && i < right; i++)
+                {
+                    
+
+
+                    if (tokens[i].Value == "(")
+                    {
+                        int newLeft = i;
+                        int newRight;
+                        int openPar = 1;
+                        i++;
+                        while (i < right && !EndOfLine())
+                        {
+                            if (tokens[i].Value == ")")
+                                openPar--;
+                            else if (tokens[i].Value == "(")
+                                openPar++;
+                            if (openPar == 0)
+                                break;
+                            i++;
+                        }
+                        if (openPar != 0)
+                        {
+                            AddError("Invalid Expression");
+                            return null;
+                        }
+                        newRight = i;
+                        Expression expression = ParseArithmeticExpression(newLeft, newRight);
+                        if (expression == null)
+                        {
+                            AddError("Invalid Expression");
+                            return null;
+                        }
+                        leftExpression = new ParenthesisExpression(BuildLocation(tokens[left].Location), typeof(int), expression);
+                    }
+
+
+                }
+            }
+            else
+            {
+                AddError("Invalid Expression");
+                return null;
+            }
         }
-        LogicExpression ParseLogicExpression()
+
+        Expression ParseLogicExpression()
         {
             throw new NotImplementedException();
         }
@@ -392,6 +459,16 @@ namespace Parser
             functionsType["IsBrushColor"] = tInt;
             functionsType["IsBrushSize"] = tInt;
             functionsType["IsCanvasColor"] = tInt;
+
+            //OperatorPrecedence
+            operatorPrecedence[""] = 0;
+            for (int k = 0; k < listOperatorPrecedence.Count; k++)
+            {
+                for(int l = 0; l < listOperatorPrecedence[k].Count; l++)
+                {
+                    operatorPrecedence[listOperatorPrecedence[k][l]] = k;
+                }
+            }
         }
     }
 }

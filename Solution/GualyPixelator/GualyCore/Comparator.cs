@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public abstract class Comparator : LogicExpression
+    public abstract class Comparator : Expression
     {
         protected ArithmeticExpression leftOperand;
         protected ArithmeticExpression rightOperand;

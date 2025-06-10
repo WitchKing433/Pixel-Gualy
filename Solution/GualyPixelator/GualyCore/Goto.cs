@@ -9,9 +9,9 @@ namespace GualyCore
     public class GoTo : ILineNode
     {
         string destinLabel;
-        LogicExpression expression;
+        Expression expression;
 
-        public GoTo(string label, CodeLocation location, LogicExpression expression) 
+        public GoTo(string label, CodeLocation location, Expression expression) 
         {
             destinLabel = label;
             this.expression = expression;

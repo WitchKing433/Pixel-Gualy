@@ -8,11 +8,13 @@ namespace GualyCore
 {
     public abstract class ArithmeticOperator : ArithmeticExpression
     {
-        public ArithmeticExpression LeftOperand {  get; set; }
-        public ArithmeticExpression RightOperand {  get; set; }
+        protected ArithmeticExpression leftOperand;
+        protected ArithmeticExpression rightOperand;
 
-        protected ArithmeticOperator(CodeLocation location) : base(location)
+        protected ArithmeticOperator(CodeLocation location, Type type, ArithmeticExpression leftOperand, ArithmeticExpression rightOperand) : base(location, type)
         {
+            this.leftOperand = leftOperand;
+            this.rightOperand = rightOperand;
         }
     }
 }

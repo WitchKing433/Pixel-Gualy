@@ -8,13 +8,13 @@ namespace GualyCore
 {
     public class Mul : ArithmeticOperator
     {
-        public Mul(CodeLocation location) : base(location)
+        public Mul(CodeLocation location, Type type, ArithmeticExpression leftOperand, ArithmeticExpression rightOperand) : base(location, type, leftOperand, rightOperand)
         {
         }
 
-        public override object Evaluate()
+        public override object Evaluate(ProgramState programState)
         {
-            return LeftOperand.ArithmeticEvaluate() * RightOperand.ArithmeticEvaluate();
+            return leftOperand.ArithmeticEvaluate(programState) * rightOperand.ArithmeticEvaluate(programState);
         }
     }
 }

@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public abstract class ArithmeticExpression : LogicExpression
+    public abstract class ArithmeticExpression : Expression
     {
-        protected ArithmeticExpression(CodeLocation location) : base(location)
+
+        protected ArithmeticExpression(CodeLocation location, Type type) : base(location, type)
         {
 
         }
-
-        public int ArithmeticEvaluate()
+        public int ArithmeticEvaluate(ProgramState programState)
         {
-            return (int) Evaluate();
-        }
-
-        public override bool LogicEvaluate()
-        {
-            return ArithmeticEvaluate() != 0;
+            return (int)Evaluate(programState);
         }
     }
 }
