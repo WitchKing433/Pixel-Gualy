@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class Variable : Expression
+    public class Variable : ArithmeticExpression
     {
         public string Name {  get; private set; }
 

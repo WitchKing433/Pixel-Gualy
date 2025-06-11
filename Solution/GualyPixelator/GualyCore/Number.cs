@@ -8,16 +8,15 @@ namespace GualyCore
 {
     public class Number : ArithmeticExpression
     {
-        public ExpressionValue Value { get; private set; }
-
-        public Number(int value, CodeLocation location) : base(location)
+        public int Value {  get; private set; }
+        public Number(CodeLocation location, Type type, int value) : base(location, type)
         {
-            Value = new ExpressionValue(value);
+            Value = value;
         }
 
-        public override object Evaluate()
+        public override object Evaluate(ProgramState programState)
         {
-            return Value.Evaluate();
+            return Value;
         }
     }
 }
