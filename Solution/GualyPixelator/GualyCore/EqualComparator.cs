@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class EqualComparator : Comparator, Expression
+    public class EqualComparator : BinaryOperator
     {
-        public override object Evaluate()
+        public EqualComparator(CodeLocation location, Type type, ArithmeticExpression leftOperand, ArithmeticExpression rightOperand) : base(location, type, leftOperand, rightOperand)
         {
-            return leftOperand.ArithmeticEvaluate() == rightOperand.ArithmeticEvaluate();
+        }
+
+        public override object Evaluate(ProgramState programState)
+        {
+            return leftOperand.ArithmeticEvaluate(programState) == rightOperand.ArithmeticEvaluate(programState) ? 1 : 0;
         }
     }
 }

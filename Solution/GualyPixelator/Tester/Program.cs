@@ -5,7 +5,7 @@ namespace Tester
     {
         static void Main(string[] args)
         {
-            Tokenizer tokenizer = new Tokenizer("$ \n dgd | &\nsf $");
+            Tokenizer tokenizer = new Tokenizer("\"Red\"");
             List<Token> tokens = tokenizer.Tokenize();
             for (int i = 0; i < tokens.Count; i++) 
             {
@@ -15,6 +15,7 @@ namespace Tester
             {
                 Console.WriteLine( tokenizer.errors[i].ToString());
             }
+            
         }
     }
 }

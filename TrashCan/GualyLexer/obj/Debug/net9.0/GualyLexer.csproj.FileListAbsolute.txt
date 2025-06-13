@@ -1,5 +1,0 @@
-D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyLexer\obj\Debug\net9.0\GualyLexer.GeneratedMSBuildEditorConfig.editorconfig
-D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyLexer\obj\Debug\net9.0\GualyLexer.AssemblyInfoInputs.cache
-D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyLexer\obj\Debug\net9.0\GualyLexer.AssemblyInfo.cs
-D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyLexer\obj\Debug\net9.0\GualyLexer.csproj.CoreCompileInputs.cache
-D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyLexer\obj\Debug\net9.0\GualyLexer.sourcelink.json

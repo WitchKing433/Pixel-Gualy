@@ -8,6 +8,7 @@ namespace GualyCore
 {
     public abstract class Instruction : ILineNode
     {
+        
         public CodeLocation Location {  get; private  set; }
         protected List<Expression> parameters;
 
@@ -18,22 +19,12 @@ namespace GualyCore
         }
         public static Instruction BuildInstruction(CodeLocation location, List<Expression> parameters, string instruction)
         {
-            switch (instruction)
+            if(ProgramData.instructions.TryGetValue(instruction, out Type type))
             {
-                case "Color": { return new ColorInstruction(location, parameters); }
-
-                case "Size": { return new SizeInstruction(location, parameters); }
-
-                case "DrawLine": { return new DrawLineInstruction(location, parameters); }
-
-                case "DrawCircle": { return new ColorInstruction(location, parameters); }
-
-                case "DrawRectangle": { return new DrawRectangleInstruction(location, parameters); }
-
-                case "Fill": { return new FillInstruction(location, parameters); }
-                    
-                default : { throw new Exception("Invalid Instruction"); }
+                return (Instruction)Activator.CreateInstance(type, location, parameters);
             }
+            throw new Exception("Invalid Instruction");
+
         }
         public abstract ProgramState Execute(ProgramState programState);
 

@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 namespace GualyCore
 {
-    public class Text : Expression
+    public class Not : UnaryOperator
     {
-        public string Value {  get; private set; }
-        public Text(CodeLocation location, Type type, string text) : base(location, type)
+        public Not(CodeLocation location, Type type, ArithmeticExpression rightOperand) : base(location, type, rightOperand)
         {
-            Value = text;
         }
 
         public override object Evaluate(ProgramState programState)
         {
-            throw new NotImplementedException();
+            return rightOperand.ArithmeticEvaluate(programState) == 0 ? 1 : 0;
         }
     }
 }

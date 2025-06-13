@@ -4,13 +4,6 @@ namespace Parser
 {
     public class Parser
     {
-        List<List<string>> listOperatorPrecedence = new List<List<string>>
-        {
-            new List<string>{"+","-"},
-            new List<string>{"*","/","%"},
-            new List<string>{"**"}
-
-        };
         Dictionary<string, List<Type>> admissibleParameters = new Dictionary<string,List<Type>>();
         Dictionary<string,string> instructionParameters = new Dictionary<string,string>();
         Dictionary<string, string> functionParameters = new Dictionary<string, string>();
@@ -20,6 +13,7 @@ namespace Parser
         List<Error> errors;
         public Dictionary<string, int> labels;
         List<ILineNode> program;
+        delegate bool Predicate();
         public List<Error> Errors {  get { return errors; } private set { } }
         int i = 0;
         public Parser(List<Token> tokens)
@@ -32,7 +26,6 @@ namespace Parser
 
         public List<ILineNode> Parse()
         {
-
             i = 0;
             if (i < tokens.Count)
                 ParseSpawn();
@@ -143,8 +136,7 @@ namespace Parser
                     }
                     else
                     {
-                        i++;
-                        expression = ParseArithmeticExpression(i,tokens.Count - 1);              //revisar despues donde deja el puntero parse expression 
+                        expression = ParseAssignmentExpression();              //revisar despues donde deja el puntero parse expression 
                     }
                     if (expression == null)
                     {
@@ -338,7 +330,7 @@ namespace Parser
                         {
                             if (operatorPrecedence[tokens[i].Value] <= operatorPrecedence[oper])
                             {
-                                if (!(oper == "**" && tokens[i].Value == "**"))
+                                if (!(ProgramData.rightAssociative.Contains(oper) && tokens[i].Value == oper))
                                 {
                                     oper = tokens[i].Value;
                                     operIndex = i;
@@ -378,18 +370,21 @@ namespace Parser
                     AddError("Invalid Expression");
                     return null;
                 }
-                leftExpression = ParseArithmeticExpression(left, operIndex - 1);
-                if(leftExpression == null)
-                {
-                    return null;
-                }
                 rightExpression = ParseArithmeticExpression(operIndex + 1, newRight);
                 if (rightExpression == null)
                 {
                     return null;
                 }
-                return ArithmeticOperator.BuildOperator(BuildLocation(tokens[operIndex].Location), leftExpression,rightExpression, oper);
-               
+                if (!ProgramData.unaryOperators.ContainsKey(oper))
+                {
+                    leftExpression = ParseArithmeticExpression(left, operIndex - 1);
+                    if (leftExpression == null)
+                    {
+                        return null;
+                    }
+                    return BinaryOperator.BuildOperator(BuildLocation(tokens[operIndex].Location), leftExpression, rightExpression, oper);
+                }
+                return UnaryOperator.BuildOperator(oper, BuildLocation(tokens[operIndex].Location),rightExpression);
             }
             else
             {
@@ -398,11 +393,61 @@ namespace Parser
             }
         }
 
-
-
-        Expression ParseLogicExpression()
+        Expression ParseAssignmentExpression()
         {
-            throw new NotImplementedException();
+            int left = i;
+            int j = i;
+            for (; IsInRange(j) && tokens[j].Value != "\n"; j++) ;
+            if(IsInRange(j) && tokens[j].Value == "\n")
+            {
+                Expression expression = ParseArithmeticExpression(left, j - 1);
+                if(expression != null)
+                    return expression;
+            }
+            return null;
+        }
+        Expression ParseExpression(int left, int right)
+        {
+            Expression expression = ParseString();
+            if (expression == null)
+            {
+                i = left;
+                expression = ParseArithmeticExpression(left, right);
+                if (expression == null)
+                {
+                    AddError("Invalid expression");
+                    return null;
+                }
+            }
+            return expression;
+        }
+        Text ParseString()
+        {
+            if (IsInRange() && tokens[i].Value == "\"")
+            {
+                Token token = tokens[i];
+                i++;
+                if(IsInRange() && tokens[i].Type == TokenType.Text)
+                {
+                    Token text = tokens[i];
+                    i++;
+                    {
+                        if(IsInRange() && tokens[i].Value == "\"")
+                        {
+                            return new Text(BuildLocation(token.Location), typeof(string), text.Value);
+                        }
+                    }
+                }
+            }
+            return null;
+
+        }
+        Expression ParseParameterExpression(int left)
+        {
+            for (int j = 0; IsInRange(j) && tokens[i].Value != "," && tokens[i].Value != "\n"; j++);
+            if (!IsInRange())
+                return null;
+
         }
         bool ValidateParameters(List<Expression> parameters, string sequence)
         {
@@ -428,7 +473,12 @@ namespace Parser
         }
         void AddError(string text)
         {
-            errors.Add(new Error(text, tokens[i].Location));
+            if (IsInRange())
+                errors.Add(new Error(text, tokens[i].Location));
+            else if (tokens.Count > 0)
+                errors.Add(new Error(text, tokens[tokens.Count - 1].Location));
+            else
+                errors.Add(new Error(text, (0, 0)));
         }
         bool AddInstruction(List<Expression> parameters, Token instruction)
         {
@@ -448,7 +498,32 @@ namespace Parser
         {
             return r < tokens.Count;
         }
-
+        bool SkipLine()
+        {
+            bool flag  = SkipToTokenByPredicate("\n", IsInRange);
+            if (flag)
+                i++;
+            return flag;
+        }
+        bool SkipToToken(string text)
+        {
+            return SkipToTokenByPredicate(text, SameLine);
+        }
+        bool SkipToTokenByPredicate(string text, Predicate predicate)
+        {
+            for (; predicate(); i++)
+            {
+                if (tokens[i].Value == text)
+                {
+                    break;
+                }
+            }
+            return (predicate());
+        }
+        bool SameLine()
+        {
+            return IsInRange() && !(tokens[i].Value == "\n");
+        }
         void RegisterParameters()
         {
             Type tInt = typeof(int);
@@ -492,11 +567,11 @@ namespace Parser
 
             //OperatorPrecedence
             operatorPrecedence[""] = -1;
-            for (int k = 0; k < listOperatorPrecedence.Count; k++)
+            for (int k = 0; k < ProgramData.listOperatorPrecedence.Count; k++)
             {
-                for(int l = 0; l < listOperatorPrecedence[k].Count; l++)
+                for(int l = 0; l < ProgramData.listOperatorPrecedence[k].Count; l++)
                 {
-                    operatorPrecedence[listOperatorPrecedence[k][l]] = k;
+                    operatorPrecedence[ProgramData.listOperatorPrecedence[k][l]] = k;
                 }
             }
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GualyCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7769109219df06bfef29276b184431e3ff17c49f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2c525a7a1780bb6dd6f72b3059b8ab01764794f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GualyCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GualyCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
