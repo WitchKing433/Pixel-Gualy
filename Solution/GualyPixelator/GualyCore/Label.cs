@@ -23,9 +23,8 @@ namespace GualyCore
             return location;
         }
 
-        public ProgramState Execute(ProgramState programState)
+        public void Execute(ProgramState programState)
         {
-            return programState;
         }
     }
 }

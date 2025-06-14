@@ -28,10 +28,14 @@ namespace Parser
         {
             i = 0;
             if (i < tokens.Count)
+            {
                 ParseSpawn();
+                for (; IsInRange() && tokens[i].Value != "\n"; i++) ;
+                i++;
+            }
             else
                 AddError("Blank Code");
-            for (; i < tokens.Count; i++)
+            for (; IsInRange(); i++)
             {
                 if (tokens[i].Type == TokenType.Instruction)
                 {
@@ -43,6 +47,11 @@ namespace Parser
                     ParseText();
                     continue;
                 }
+                else
+                {
+                    AddError("Invalid Token");
+                }
+                for (; IsInRange() && tokens[i].Value != "\n"; i++) ;
             }
             if (errors.Count > 0)
                 return null;
@@ -166,7 +175,6 @@ namespace Parser
             bool unParseable = false;
             Token goTo = tokens[i];
             string label = "";
-            Expression expression;
             i++;
             if (IsInRange())
             {
@@ -194,32 +202,11 @@ namespace Parser
                         }
                         if (IsInRange())
                         {
-                            if (!ParseByValue("("))
+                            List<Expression> parameters = ParseParameters();
+                            if (!unParseable && ValidateParameters(parameters, "int"))
                             {
-                                unParseable = true;
-                            }
-                            if (IsInRange())
-                            {
-                                expression = ParseLogicExpression();
-                                if(expression == null)
-                                {
-                                    AddError("Invalid LogicExpression");                  //revisar donde deja el index el parselogic
-                                    unParseable = true;
-                                }
-                                if (IsInRange())
-                                {
-                                    if (!ParseByValue(")"))
-                                    {
-                                        unParseable = true;
-                                    }
-                                    if (EndOfLine() && !unParseable)
-                                    {
-                                        program.Add(new GoTo(label,BuildLocation(goTo.Location),expression));
-                                        return true;
-                                    }
-                                    else
-                                        return false;
-                                }
+                                program.Add(new GoTo(label, BuildLocation(goTo.Location), parameters[0]));
+                                return true;
                             }
                         }
                     }
@@ -271,6 +258,7 @@ namespace Parser
         
         List<Expression> ParseParameters()
         {
+            Expression expression;
             List<Expression> parameters = new List<Expression>();
             if (!IsInRange() || tokens[i].Value != "(")
             {
@@ -278,20 +266,26 @@ namespace Parser
             }
             else
                 i++;
-            for (; i < tokens.Count && tokens[i].Value != ")"; i++)
+            for (; IsInRange() && tokens[i].Value != ")"; i++)
             {
-                parameters.Add(ParseArithmeticExpression(i, tokens.Count - 1));
-                if (tokens[i].Value == ")") 
-                    break;
-                if (tokens[i].Value != ",")
+                expression = ParseParameterExpression(i);
+                if(expression == null)
                 {
-                    AddError(", expected");
-                    i--;
+                    AddError("Wrong parameters");
+                    return null;
                 }
+                parameters.Add(expression);
+                for (; IsInRange() && tokens[i].Value != "," && !FinalParenthesis() && tokens[i].Value != "\n"; i++) ;
+                if(!IsInRange() || tokens[i].Value == "\n" || tokens[i].Value == ")")
+                    break;
             }
-            if(!IsInRange())
+            if(!IsInRange() || tokens[i].Value == "\n")
                 AddError(") expected");
             return parameters;
+        }
+        bool FinalParenthesis()
+        {
+            return tokens[i].Value == ")" && IsInRange(i + 1) && tokens[i + 1].Value == "\n";
         }
         ArithmeticExpression ParseArithmeticExpression(int left, int right)
         {
@@ -358,13 +352,13 @@ namespace Parser
                 {
                     if (left == right)
                     {
-                        if (tokens[i].Type == TokenType.Number)
+                        if (tokens[left].Type == TokenType.Number)
                         {
-                            return new Number(BuildLocation(tokens[i].Location), typeof(int), int.Parse(tokens[i].Value));
+                            return new Number(BuildLocation(tokens[left].Location), typeof(int), int.Parse(tokens[left].Value));
                         }
-                        else if(tokens[i].Type == TokenType.Text)
+                        else if(tokens[left].Type == TokenType.Text)
                         {
-                            return new Variable(tokens[i].Value, BuildLocation(tokens[i].Location), typeof(int));
+                            return new Variable(tokens[left].Value, BuildLocation(tokens[left].Location), typeof(int));
                         }
                     }
                     AddError("Invalid Expression");
@@ -401,6 +395,7 @@ namespace Parser
             if(IsInRange(j) && tokens[j].Value == "\n")
             {
                 Expression expression = ParseArithmeticExpression(left, j - 1);
+                i = j;
                 if(expression != null)
                     return expression;
             }
@@ -444,13 +439,28 @@ namespace Parser
         }
         Expression ParseParameterExpression(int left)
         {
-            for (int j = 0; IsInRange(j) && tokens[i].Value != "," && tokens[i].Value != "\n"; j++);
-            if (!IsInRange())
-                return null;
-
+            int j = left;
+            for (; IsInRange(j) && tokens[j].Value != "," && tokens[j].Value != "\n"; j++);
+            if (IsInRange(j))
+            {
+                if (tokens[j].Value == ",")
+                {
+                    return ParseExpression(left, j - 1);
+                }
+                if (tokens[j].Value == "\n")
+                {
+                    if (tokens[j - 1].Value == ")")
+                        return ParseExpression(left, j - 2);
+                }
+            }
+            return null;
         }
         bool ValidateParameters(List<Expression> parameters, string sequence)
         {
+            if(parameters == null)
+            {
+                return false;
+            }
             if(parameters.Count != admissibleParameters[sequence].Count)
                 return false;
             for(int j = 0;j < parameters.Count; j++)
@@ -566,7 +576,7 @@ namespace Parser
             functionsType["IsCanvasColor"] = tInt;
 
             //OperatorPrecedence
-            operatorPrecedence[""] = -1;
+            operatorPrecedence[""] = int.MaxValue;
             for (int k = 0; k < ProgramData.listOperatorPrecedence.Count; k++)
             {
                 for(int l = 0; l < ProgramData.listOperatorPrecedence[k].Count; l++)

@@ -8,15 +8,37 @@
     ".NETCoreApp,Version=v9.0": {
       "Tester/1.0.0": {
         "dependencies": {
-          "Lexer": "1.0.0"
+          "GualyCore": "1.0.0",
+          "Lexer": "1.0.0",
+          "Parser": "1.0.0"
         },
         "runtime": {
           "Tester.dll": {}
         }
       },
+      "GualyCore/1.0.0": {
+        "runtime": {
+          "GualyCore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Lexer/1.0.0": {
         "runtime": {
           "Lexer.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Parser/1.0.0": {
+        "dependencies": {
+          "GualyCore": "1.0.0",
+          "Lexer": "1.0.0"
+        },
+        "runtime": {
+          "Parser.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -30,7 +52,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "GualyCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Lexer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Parser/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

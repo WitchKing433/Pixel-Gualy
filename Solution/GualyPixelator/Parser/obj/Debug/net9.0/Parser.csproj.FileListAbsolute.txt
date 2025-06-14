@@ -4,3 +4,15 @@ D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.AssemblyInfo.cs
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.csproj.CoreCompileInputs.cache
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.sourcelink.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\Parser.deps.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\Parser.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\Parser.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\GualyCore.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\Lexer.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\GualyCore.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\bin\Debug\net9.0\Lexer.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.csproj.Up2Date
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\refint\Parser.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\Parser.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Parser\obj\Debug\net9.0\ref\Parser.dll

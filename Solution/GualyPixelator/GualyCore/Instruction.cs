@@ -26,7 +26,7 @@ namespace GualyCore
             throw new Exception("Invalid Instruction");
 
         }
-        public abstract ProgramState Execute(ProgramState programState);
+        public abstract void Execute(ProgramState programState);
 
     }
 }

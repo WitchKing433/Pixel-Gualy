@@ -14,7 +14,7 @@ namespace GualyCore
 
         public override object Evaluate(ProgramState programState)
         {
-            return Math.Pow(leftOperand.ArithmeticEvaluate(programState), rightOperand.ArithmeticEvaluate(programState));
+            return (int)Math.Pow(leftOperand.ArithmeticEvaluate(programState), rightOperand.ArithmeticEvaluate(programState));
         }
     }
 }

@@ -3,3 +3,10 @@ D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\GualyCore.AssemblyInfo.cs
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\GualyCore.csproj.CoreCompileInputs.cache
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\GualyCore.sourcelink.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\bin\Debug\net9.0\GualyCore.deps.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\bin\Debug\net9.0\GualyCore.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\bin\Debug\net9.0\GualyCore.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\GualyCore.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\refint\GualyCore.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\GualyCore.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\GualyCore\obj\Debug\net9.0\ref\GualyCore.dll

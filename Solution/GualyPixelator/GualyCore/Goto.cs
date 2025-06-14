@@ -17,7 +17,7 @@ namespace GualyCore
             this.expression = expression;
         }
 
-        public ProgramState Execute(ProgramState programState)
+        public void Execute(ProgramState programState)
         {
             throw new NotImplementedException();
         }

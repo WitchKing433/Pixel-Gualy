@@ -19,10 +19,9 @@ namespace GualyCore
             this.location = location;
         }
 
-        public ProgramState Execute(ProgramState programState)
+        public void Execute(ProgramState programState)
         {
             programState.variables[name] = expression.Evaluate(programState);
-            return programState;
         }
     }
 }

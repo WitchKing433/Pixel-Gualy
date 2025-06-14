@@ -12,7 +12,7 @@ namespace GualyCore
         {
 
         }
-        public override ProgramState Execute(ProgramState programState)
+        public override void Execute(ProgramState programState)
         {
             throw new NotImplementedException();
         }

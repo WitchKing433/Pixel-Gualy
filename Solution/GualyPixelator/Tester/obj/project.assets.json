@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "GualyCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/GualyCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GualyCore.dll": {}
+        }
+      },
       "Lexer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -11,19 +21,45 @@
         "runtime": {
           "bin/placeholder/Lexer.dll": {}
         }
+      },
+      "Parser/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "GualyCore": "1.0.0",
+          "Lexer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Parser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Parser.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "GualyCore/1.0.0": {
+      "type": "project",
+      "path": "../GualyCore/GualyCore.csproj",
+      "msbuildProject": "../GualyCore/GualyCore.csproj"
+    },
     "Lexer/1.0.0": {
       "type": "project",
       "path": "../Lexer/Lexer.csproj",
       "msbuildProject": "../Lexer/Lexer.csproj"
+    },
+    "Parser/1.0.0": {
+      "type": "project",
+      "path": "../Parser/Parser.csproj",
+      "msbuildProject": "../Parser/Parser.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Lexer >= 1.0.0"
+      "GualyCore >= 1.0.0",
+      "Lexer >= 1.0.0",
+      "Parser >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -59,8 +95,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GualyCore.csproj": {
+              "projectPath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GualyCore.csproj"
+            },
             "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Lexer.csproj": {
               "projectPath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Lexer.csproj"
+            },
+            "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj": {
+              "projectPath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj"
             }
           }
         }

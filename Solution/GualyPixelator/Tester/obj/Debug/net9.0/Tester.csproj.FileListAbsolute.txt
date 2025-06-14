@@ -17,3 +17,7 @@ D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\obj\Debug\net
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\obj\Debug\net9.0\Tester.pdb
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\obj\Debug\net9.0\Tester.genruntimeconfig.cache
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\obj\Debug\net9.0\ref\Tester.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\GualyCore.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\Parser.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\GualyCore.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\Parser.pdb
