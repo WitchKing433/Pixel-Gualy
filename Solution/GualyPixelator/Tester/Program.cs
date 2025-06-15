@@ -8,7 +8,7 @@ namespace Tester
     {
         static void Main(string[] args)
         {
-            Tokenizer tokenizer = new Tokenizer("Spawn(2&&3,1+2)\n");
+            Tokenizer tokenizer = new Tokenizer("Spawn (4,6)\na <- IsBrushColor(\"Transparent\")\nnio <- a\n");
             List<Token> tokens = tokenizer.Tokenize();
             for (int i = 0; i < tokens.Count; i++) 
             {
@@ -20,13 +20,20 @@ namespace Tester
             }
             Parser.Parser parser = new Parser.Parser(tokens);
             List<ILineNode> program = parser.Parse();
-            Color[,] map = new Color[10, 600];
-            ProgramState programState = new ProgramState(0, map , 1, new System.Drawing.Color(),(0,0));
+            ProgramState programState = new ProgramState((50,50) , 5, (0,0), parser.labels);
+            for (int i = 0; i < parser.errors.Count; i++)
+            {
+                Console.WriteLine(parser.errors[i].ToString());
+            }
             if (program != null)
             {
+                for (int i = 0; i < program.Count; i++) 
+                {
+                    program[i].Execute(programState);
+                }
                 Console.WriteLine("siiiiiiiii");
-                program[0].Execute(programState);
-                Console.WriteLine($"({programState.wallePosition.Item2},{programState.wallePosition.Item1})");
+                Console.WriteLine($"({programState.wallePosition.Item1},{programState.wallePosition.Item2})");
+                Console.WriteLine(programState.variables["nio"]);
             }
             else
                 Console.WriteLine("nooooooooo");

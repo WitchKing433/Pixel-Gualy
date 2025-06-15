@@ -14,7 +14,7 @@ namespace GualyCore
 
         public override object Evaluate(ProgramState programState)
         {
-            throw new NotImplementedException();
+            return (int)parameters[0].Evaluate(programState) == programState.brushSize ? 1 : 0;
         }
     }
 }

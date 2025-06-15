@@ -10,7 +10,7 @@ namespace Parser
         Dictionary<string,Type> functionsType = new Dictionary<string, Type>();
         Dictionary<string, int> operatorPrecedence = new Dictionary<string, int>();
         List<Token> tokens;
-        List<Error> errors;
+        public List<Error> errors;
         public Dictionary<string, int> labels;
         List<ILineNode> program;
         delegate bool Predicate();
@@ -152,7 +152,7 @@ namespace Parser
                         AddError("Invalid expression");
                         return false;
                     }
-                    if (!EndOfLine())
+                    if (IsInRange() && tokens[i].Value != "\n")
                     {
                         AddError("EndOfLine expected");
                         return false;
@@ -238,7 +238,9 @@ namespace Parser
                 {
                     if (EndOfLine())
                     {
-                        return Function.BuildFunction(BuildLocation(function.Location), functionsType[function.Value], parameters, function.Value);
+                        Function func = Function.BuildFunction(BuildLocation(function.Location), functionsType[function.Value], parameters, function.Value);
+                        i++;
+                        return func;
                     }
                     else
                     {

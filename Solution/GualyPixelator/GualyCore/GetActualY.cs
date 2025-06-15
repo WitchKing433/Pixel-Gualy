@@ -14,7 +14,7 @@ namespace GualyCore
 
         public override object Evaluate(ProgramState programState)
         {
-            throw new NotImplementedException();
+            return programState.wallePosition.Item2;
         }
     }
 }

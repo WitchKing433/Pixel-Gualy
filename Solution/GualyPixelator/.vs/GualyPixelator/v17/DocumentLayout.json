@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{60DE6D31-A708-419B-8512-844560F45096}|Tester\\Tester.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\tester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60DE6D31-A708-419B-8512-844560F45096}|Tester\\Tester.csproj|solutionrelative:tester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\programstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\programstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getcolorcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getcolorcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\isbrushcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\isbrushcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABB134BE-299B-4231-886A-13DC051A54C1}|Parser\\Parser.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +27,108 @@
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\number.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\expression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\expression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\arithmeticexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\arithmeticexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\expression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\expression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DE6D31-A708-419B-8512-844560F45096}|Tester\\Tester.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\tester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DE6D31-A708-419B-8512-844560F45096}|Tester\\Tester.csproj|solutionrelative:tester\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\isbrushsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\isbrushsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\ilinenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\ilinenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\goto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\goto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getcanvassize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getcanvassize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\div.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\div.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getactualx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getactualx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\codelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\codelocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getactualy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getactualy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\spawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\spawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\drawcircleinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\drawcircleinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\or.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\or.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\assignmentexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\assignmentexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\lexer\\tokenizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|solutionrelative:lexer\\tokenizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|solutionrelative:lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\programdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\programdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\sub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\sub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\canvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\canvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\gualycore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\gualycore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\pow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,24 +139,8 @@
       "RelativeMoniker": "D:0:0:{ABB134BE-299B-4231-886A-13DC051A54C1}|Parser\\Parser.csproj|solutionrelative:parser\\parser.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\instruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\lexer\\tokenizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|solutionrelative:lexer\\tokenizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\unaryoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\unaryoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\variable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\programstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\programstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\mod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,44 +155,12 @@
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\not.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\or.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\or.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\isbrushsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\isbrushsize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\ilocatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\ilocatable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\greatercomparator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\greatercomparator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\goto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\goto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getcolorcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getcolorcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getcanvassize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getcanvassize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getactualx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getactualx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\getactualy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\getactualy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\fillinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,14 +179,6 @@
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\drawlineinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\drawcircleinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\drawcircleinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\div.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\div.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\colorinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\colorinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -143,48 +187,16 @@
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\binaryoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\assignmentexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\assignmentexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\and.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\and.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\sizeinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\sizeinstruction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\ilinenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\ilinenode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60DE6D31-A708-419B-8512-844560F45096}|Tester\\Tester.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\tester\\tester.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{60DE6D31-A708-419B-8512-844560F45096}|Tester\\Tester.csproj|solutionrelative:tester\\tester.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\text.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\sub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\sub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\programdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\programdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\parenthesisexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\parenthesisexpression.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\notequalcomparator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -203,20 +215,8 @@
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\iscanvascolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\isbrushcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\isbrushcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\greaterequalcomparator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\greaterequalcomparator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\gualycore\\gualycore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{70EA4BC8-A27B-FA0B-F856-E6A7EB7FCDAB}|GualyCore\\GualyCore.csproj|solutionrelative:gualycore\\gualycore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|solutionrelative:lexer\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A3E33CF-9BCB-4857-808F-A14E9AF627E0}|Lexer\\Lexer.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\lexer\\tokensnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -234,11 +234,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.cs",
+              "RelativeDocumentMoniker": "Parser\\Parser.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.cs",
+              "RelativeToolTip": "Parser\\Parser.cs",
+              "ViewState": "AgIAALkBAAAAAAAAAAA8wLEBAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:30:34.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetColorCount.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetColorCount.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GetColorCount.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetColorCount.cs",
+              "RelativeToolTip": "GualyCore\\GetColorCount.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwCUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:41:52.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ArithmeticExpression.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticExpression.cs",
+              "RelativeDocumentMoniker": "GualyCore\\ArithmeticExpression.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticExpression.cs",
+              "RelativeToolTip": "GualyCore\\ArithmeticExpression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T22:54:27.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Expression.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Expression.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Expression.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Expression.cs",
+              "RelativeToolTip": "GualyCore\\Expression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T00:43:10.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Number.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Number.cs",
               "RelativeDocumentMoniker": "GualyCore\\Number.cs",
@@ -251,46 +303,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IsBrushColor.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsBrushColor.cs",
+              "RelativeDocumentMoniker": "GualyCore\\IsBrushColor.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsBrushColor.cs",
+              "RelativeToolTip": "GualyCore\\IsBrushColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:43:42.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProgramState.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramState.cs",
+              "RelativeDocumentMoniker": "GualyCore\\ProgramState.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramState.cs",
+              "RelativeToolTip": "GualyCore\\ProgramState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:06:08.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ArithmeticExpression.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticExpression.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ArithmeticExpression.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ArithmeticExpression.cs",
-              "RelativeToolTip": "GualyCore\\ArithmeticExpression.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T22:54:27.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Expression.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Expression.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Expression.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Expression.cs",
-              "RelativeToolTip": "GualyCore\\Expression.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T00:43:10.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Spawn.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Spawn.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Spawn.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Spawn.cs",
-              "RelativeToolTip": "GualyCore\\Spawn.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T01:39:43.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Instruction.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Instruction.cs",
               "RelativeDocumentMoniker": "GualyCore\\Instruction.cs",
@@ -303,98 +342,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "Add.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Add.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Add.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Add.cs",
+              "RelativeToolTip": "GualyCore\\Add.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T22:55:57.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Tester\\Program.cs",
               "RelativeDocumentMoniker": "Tester\\Program.cs",
               "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Tester\\Program.cs",
               "RelativeToolTip": "Tester\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-01T22:47:37.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Parser.csproj",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj",
-              "RelativeDocumentMoniker": "Parser\\Parser.csproj",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj",
-              "RelativeToolTip": "Parser\\Parser.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-01T23:42:12.56Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Parser.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.cs",
-              "RelativeDocumentMoniker": "Parser\\Parser.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.cs",
-              "RelativeToolTip": "Parser\\Parser.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAuwBUBAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T23:30:34.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pow.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Pow.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Pow.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Pow.cs",
-              "RelativeToolTip": "GualyCore\\Pow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:47:37.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CodeLocation.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\CodeLocation.cs",
-              "RelativeDocumentMoniker": "GualyCore\\CodeLocation.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\CodeLocation.cs",
-              "RelativeToolTip": "GualyCore\\CodeLocation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T23:34:58.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Tokenizer.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Tokenizer.cs",
-              "RelativeDocumentMoniker": "Lexer\\Tokenizer.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Tokenizer.cs",
-              "RelativeToolTip": "Lexer\\Tokenizer.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAhwBIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T15:45:05.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "UnaryOperator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\UnaryOperator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\UnaryOperator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\UnaryOperator.cs",
-              "RelativeToolTip": "GualyCore\\UnaryOperator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:01:48.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Variable.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Variable.cs",
               "RelativeDocumentMoniker": "GualyCore\\Variable.cs",
@@ -407,358 +381,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProgramState.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramState.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ProgramState.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramState.cs",
-              "RelativeToolTip": "GualyCore\\ProgramState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Text.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Text.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Text.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Text.cs",
+              "RelativeToolTip": "GualyCore\\Text.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:06:08.134Z",
+              "WhenOpened": "2025-05-11T23:39:15.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Mod.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mod.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Mod.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mod.cs",
-              "RelativeToolTip": "GualyCore\\Mod.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:47:01.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Mul.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mul.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Mul.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mul.cs",
-              "RelativeToolTip": "GualyCore\\Mul.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:43:42.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Not.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Not.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Not.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Not.cs",
-              "RelativeToolTip": "GualyCore\\Not.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T21:01:04.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Or.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Or.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Or.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Or.cs",
-              "RelativeToolTip": "GualyCore\\Or.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:45:25.545Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "IsBrushSize.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsBrushSize.cs",
               "RelativeDocumentMoniker": "GualyCore\\IsBrushSize.cs",
               "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsBrushSize.cs",
               "RelativeToolTip": "GualyCore\\IsBrushSize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T17:44:30.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ILocatable.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ILocatable.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ILocatable.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ILocatable.cs",
-              "RelativeToolTip": "GualyCore\\ILocatable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T20:12:10.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GreaterComparator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterComparator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GreaterComparator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterComparator.cs",
-              "RelativeToolTip": "GualyCore\\GreaterComparator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:00:56.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "GoTo.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GoTo.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GoTo.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GoTo.cs",
-              "RelativeToolTip": "GualyCore\\GoTo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T18:32:01.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "GetColorCount.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetColorCount.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GetColorCount.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetColorCount.cs",
-              "RelativeToolTip": "GualyCore\\GetColorCount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T17:41:52.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "GetCanvasSize.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetCanvasSize.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GetCanvasSize.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetCanvasSize.cs",
-              "RelativeToolTip": "GualyCore\\GetCanvasSize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T17:40:59.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "GetActualX.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualX.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GetActualX.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualX.cs",
-              "RelativeToolTip": "GualyCore\\GetActualX.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T17:36:42.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Function.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Function.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Function.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Function.cs",
-              "RelativeToolTip": "GualyCore\\Function.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T16:25:40.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "GetActualY.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualY.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GetActualY.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualY.cs",
-              "RelativeToolTip": "GualyCore\\GetActualY.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T17:39:37.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FillInstruction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\FillInstruction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\FillInstruction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\FillInstruction.cs",
-              "RelativeToolTip": "GualyCore\\FillInstruction.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:15:00.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EqualComparator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\EqualComparator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\EqualComparator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\EqualComparator.cs",
-              "RelativeToolTip": "GualyCore\\EqualComparator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T21:06:31.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "DrawRectangleInstruction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawRectangleInstruction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\DrawRectangleInstruction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawRectangleInstruction.cs",
-              "RelativeToolTip": "GualyCore\\DrawRectangleInstruction.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:14:28.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "DrawLineInstruction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawLineInstruction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\DrawLineInstruction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawLineInstruction.cs",
-              "RelativeToolTip": "GualyCore\\DrawLineInstruction.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:13:30.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DrawCircleInstruction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawCircleInstruction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\DrawCircleInstruction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawCircleInstruction.cs",
-              "RelativeToolTip": "GualyCore\\DrawCircleInstruction.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:13:56.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Div.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Div.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Div.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Div.cs",
-              "RelativeToolTip": "GualyCore\\Div.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T23:46:12.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ColorInstruction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ColorInstruction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ColorInstruction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ColorInstruction.cs",
-              "RelativeToolTip": "GualyCore\\ColorInstruction.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T19:50:33.514Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "BinaryOperator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\BinaryOperator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\BinaryOperator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\BinaryOperator.cs",
-              "RelativeToolTip": "GualyCore\\BinaryOperator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T22:56:22.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "AssignmentExpression.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\AssignmentExpression.cs",
-              "RelativeDocumentMoniker": "GualyCore\\AssignmentExpression.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\AssignmentExpression.cs",
-              "RelativeToolTip": "GualyCore\\AssignmentExpression.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBcAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T22:07:49.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "And.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\And.cs",
-              "RelativeDocumentMoniker": "GualyCore\\And.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\And.cs",
-              "RelativeToolTip": "GualyCore\\And.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:02:38.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Add.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Add.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Add.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Add.cs",
-              "RelativeToolTip": "GualyCore\\Add.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T22:55:57.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "SizeInstruction.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\SizeInstruction.cs",
-              "RelativeDocumentMoniker": "GualyCore\\SizeInstruction.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\SizeInstruction.cs",
-              "RelativeToolTip": "GualyCore\\SizeInstruction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:00:20.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Label.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Label.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Label.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Label.cs",
-              "RelativeToolTip": "GualyCore\\Label.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T19:58:53.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 13,
               "Title": "ILineNode.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ILineNode.cs",
               "RelativeDocumentMoniker": "GualyCore\\ILineNode.cs",
@@ -771,33 +420,163 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Tester",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Tester\\Tester.csproj",
-              "RelativeDocumentMoniker": "Tester\\Tester.csproj",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Tester\\Tester.csproj",
-              "RelativeToolTip": "Tester\\Tester.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-14T00:41:00.237Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Text.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Text.cs",
-              "RelativeDocumentMoniker": "GualyCore\\Text.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Text.cs",
-              "RelativeToolTip": "GualyCore\\Text.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "GoTo.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GoTo.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GoTo.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GoTo.cs",
+              "RelativeToolTip": "GualyCore\\GoTo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T23:39:15.234Z",
+              "WhenOpened": "2025-06-06T18:32:01.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 15,
+              "Title": "GetCanvasSize.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetCanvasSize.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GetCanvasSize.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetCanvasSize.cs",
+              "RelativeToolTip": "GualyCore\\GetCanvasSize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:40:59.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Div.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Div.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Div.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Div.cs",
+              "RelativeToolTip": "GualyCore\\Div.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:46:12.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Label.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Label.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Label.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Label.cs",
+              "RelativeToolTip": "GualyCore\\Label.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T19:58:53.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Tokenizer.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Tokenizer.cs",
+              "RelativeDocumentMoniker": "Lexer\\Tokenizer.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Tokenizer.cs",
+              "RelativeToolTip": "Lexer\\Tokenizer.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAYwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T15:45:05.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Spawn.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Spawn.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Spawn.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Spawn.cs",
+              "RelativeToolTip": "GualyCore\\Spawn.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAvwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T01:39:43.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetActualY.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualY.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GetActualY.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualY.cs",
+              "RelativeToolTip": "GualyCore\\GetActualY.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:39:37.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DrawCircleInstruction.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawCircleInstruction.cs",
+              "RelativeDocumentMoniker": "GualyCore\\DrawCircleInstruction.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawCircleInstruction.cs",
+              "RelativeToolTip": "GualyCore\\DrawCircleInstruction.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:13:56.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetActualX.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualX.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GetActualX.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GetActualX.cs",
+              "RelativeToolTip": "GualyCore\\GetActualX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:36:42.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Or.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Or.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Or.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Or.cs",
+              "RelativeToolTip": "GualyCore\\Or.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:45:25.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CodeLocation.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\CodeLocation.cs",
+              "RelativeDocumentMoniker": "GualyCore\\CodeLocation.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\CodeLocation.cs",
+              "RelativeToolTip": "GualyCore\\CodeLocation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:34:58.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Function.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Function.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Function.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Function.cs",
+              "RelativeToolTip": "GualyCore\\Function.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T16:25:40.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Sub.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Sub.cs",
               "RelativeDocumentMoniker": "GualyCore\\Sub.cs",
@@ -810,111 +589,83 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 28,
               "Title": "ProgramData.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramData.cs",
               "RelativeDocumentMoniker": "GualyCore\\ProgramData.cs",
               "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramData.cs",
               "RelativeToolTip": "GualyCore\\ProgramData.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwC8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwC8AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T16:45:40.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ParenthesisExpression.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ParenthesisExpression.cs",
-              "RelativeDocumentMoniker": "GualyCore\\ParenthesisExpression.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ParenthesisExpression.cs",
-              "RelativeToolTip": "GualyCore\\ParenthesisExpression.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "AssignmentExpression.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\AssignmentExpression.cs",
+              "RelativeDocumentMoniker": "GualyCore\\AssignmentExpression.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\AssignmentExpression.cs",
+              "RelativeToolTip": "GualyCore\\AssignmentExpression.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T01:00:15.077Z",
+              "WhenOpened": "2025-06-05T22:07:49.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "NotEqualComparator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\NotEqualComparator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\NotEqualComparator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\NotEqualComparator.cs",
-              "RelativeToolTip": "GualyCore\\NotEqualComparator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Token.cs",
+              "RelativeDocumentMoniker": "Lexer\\Token.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Token.cs",
+              "RelativeToolTip": "Lexer\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:53:26.88Z",
+              "WhenOpened": "2025-05-29T15:22:16.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "LessEqualComparator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessEqualComparator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\LessEqualComparator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessEqualComparator.cs",
-              "RelativeToolTip": "GualyCore\\LessEqualComparator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABCAAAAAAAAAA==",
+              "DocumentIndex": 30,
+              "Title": "Canvas.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Canvas.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Canvas.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Canvas.cs",
+              "RelativeToolTip": "GualyCore\\Canvas.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwDIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:59:54.88Z",
+              "WhenOpened": "2025-06-14T18:42:57.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "LessComparator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessComparator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\LessComparator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessComparator.cs",
-              "RelativeToolTip": "GualyCore\\LessComparator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABBAAAAAAAAAA==",
+              "DocumentIndex": 32,
+              "Title": "Pow.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Pow.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Pow.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Pow.cs",
+              "RelativeToolTip": "GualyCore\\Pow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:59:09.47Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T23:47:37.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "IsCanvasColor.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsCanvasColor.cs",
-              "RelativeDocumentMoniker": "GualyCore\\IsCanvasColor.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsCanvasColor.cs",
-              "RelativeToolTip": "GualyCore\\IsCanvasColor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T17:45:57.873Z",
-              "EditorCaption": ""
+              "DocumentIndex": 33,
+              "Title": "Parser.csproj",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj",
+              "RelativeDocumentMoniker": "Parser\\Parser.csproj",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj",
+              "RelativeToolTip": "Parser\\Parser.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-01T23:42:12.56Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "IsBrushColor.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsBrushColor.cs",
-              "RelativeDocumentMoniker": "GualyCore\\IsBrushColor.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsBrushColor.cs",
-              "RelativeToolTip": "GualyCore\\IsBrushColor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T17:43:42.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "GreaterEqualComparator.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterEqualComparator.cs",
-              "RelativeDocumentMoniker": "GualyCore\\GreaterEqualComparator.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterEqualComparator.cs",
-              "RelativeToolTip": "GualyCore\\GreaterEqualComparator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T20:56:31.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 31,
               "Title": "GualyCore.csproj",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GualyCore.csproj",
               "RelativeDocumentMoniker": "GualyCore\\GualyCore.csproj",
@@ -927,15 +678,243 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Token.cs",
-              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Token.cs",
-              "RelativeDocumentMoniker": "Lexer\\Token.cs",
-              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Token.cs",
-              "RelativeToolTip": "Lexer\\Token.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 34,
+              "Title": "UnaryOperator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\UnaryOperator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\UnaryOperator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\UnaryOperator.cs",
+              "RelativeToolTip": "GualyCore\\UnaryOperator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T15:22:16.266Z"
+              "WhenOpened": "2025-06-13T21:01:48.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Mod.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mod.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Mod.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mod.cs",
+              "RelativeToolTip": "GualyCore\\Mod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:47:01.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Mul.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mul.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Mul.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Mul.cs",
+              "RelativeToolTip": "GualyCore\\Mul.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T23:43:42.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Not.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Not.cs",
+              "RelativeDocumentMoniker": "GualyCore\\Not.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\Not.cs",
+              "RelativeToolTip": "GualyCore\\Not.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T21:01:04.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ILocatable.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ILocatable.cs",
+              "RelativeDocumentMoniker": "GualyCore\\ILocatable.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ILocatable.cs",
+              "RelativeToolTip": "GualyCore\\ILocatable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:12:10.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GreaterComparator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterComparator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GreaterComparator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterComparator.cs",
+              "RelativeToolTip": "GualyCore\\GreaterComparator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:00:56.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "FillInstruction.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\FillInstruction.cs",
+              "RelativeDocumentMoniker": "GualyCore\\FillInstruction.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\FillInstruction.cs",
+              "RelativeToolTip": "GualyCore\\FillInstruction.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:15:00.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EqualComparator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\EqualComparator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\EqualComparator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\EqualComparator.cs",
+              "RelativeToolTip": "GualyCore\\EqualComparator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T21:06:31.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "DrawRectangleInstruction.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawRectangleInstruction.cs",
+              "RelativeDocumentMoniker": "GualyCore\\DrawRectangleInstruction.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawRectangleInstruction.cs",
+              "RelativeToolTip": "GualyCore\\DrawRectangleInstruction.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:14:28.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DrawLineInstruction.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawLineInstruction.cs",
+              "RelativeDocumentMoniker": "GualyCore\\DrawLineInstruction.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\DrawLineInstruction.cs",
+              "RelativeToolTip": "GualyCore\\DrawLineInstruction.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:13:30.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ColorInstruction.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ColorInstruction.cs",
+              "RelativeDocumentMoniker": "GualyCore\\ColorInstruction.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ColorInstruction.cs",
+              "RelativeToolTip": "GualyCore\\ColorInstruction.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T19:50:33.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "BinaryOperator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\BinaryOperator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\BinaryOperator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\BinaryOperator.cs",
+              "RelativeToolTip": "GualyCore\\BinaryOperator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T22:56:22.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "And.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\And.cs",
+              "RelativeDocumentMoniker": "GualyCore\\And.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\And.cs",
+              "RelativeToolTip": "GualyCore\\And.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:02:38.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "SizeInstruction.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\SizeInstruction.cs",
+              "RelativeDocumentMoniker": "GualyCore\\SizeInstruction.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\SizeInstruction.cs",
+              "RelativeToolTip": "GualyCore\\SizeInstruction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T20:00:20.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Tester.csproj",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Tester\\Tester.csproj",
+              "RelativeDocumentMoniker": "Tester\\Tester.csproj",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Tester\\Tester.csproj",
+              "RelativeToolTip": "Tester\\Tester.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-14T00:41:00.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NotEqualComparator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\NotEqualComparator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\NotEqualComparator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\NotEqualComparator.cs",
+              "RelativeToolTip": "GualyCore\\NotEqualComparator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:53:26.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "LessEqualComparator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessEqualComparator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\LessEqualComparator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessEqualComparator.cs",
+              "RelativeToolTip": "GualyCore\\LessEqualComparator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:59:54.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "LessComparator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessComparator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\LessComparator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\LessComparator.cs",
+              "RelativeToolTip": "GualyCore\\LessComparator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:59:09.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IsCanvasColor.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsCanvasColor.cs",
+              "RelativeDocumentMoniker": "GualyCore\\IsCanvasColor.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\IsCanvasColor.cs",
+              "RelativeToolTip": "GualyCore\\IsCanvasColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T17:45:57.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "GreaterEqualComparator.cs",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterEqualComparator.cs",
+              "RelativeDocumentMoniker": "GualyCore\\GreaterEqualComparator.cs",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GreaterEqualComparator.cs",
+              "RelativeToolTip": "GualyCore\\GreaterEqualComparator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T20:56:31.037Z"
             },
             {
               "$type": "Document",

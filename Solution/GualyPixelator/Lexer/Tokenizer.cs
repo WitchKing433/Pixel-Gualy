@@ -97,7 +97,7 @@ namespace Lexer
         Token MatchString (Predicate predicate, TokenType type)
         {
             string text = "";
-            for (; i < code.Length && predicate(text + code[i]); i++, col++)
+            for (; i < code.Length && code[i] != '\n' && predicate(text + code[i]); i++, col++)
             {
                 text += code[i];
             }
@@ -115,6 +115,7 @@ namespace Lexer
         }
         bool MatchNumber(string text) 
         {
+            
             Regex regex = new Regex(@"^\d+$");
             return regex.IsMatch(text);
         }

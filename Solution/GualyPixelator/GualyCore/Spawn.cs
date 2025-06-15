@@ -16,15 +16,7 @@ namespace GualyCore
         {
             int x = (int)parameters[0].Evaluate(programState);
             int y = (int)parameters[1].Evaluate(programState);
-            if(x > programState.pixelMap.GetLength(1) || x < 0)
-            {
-                throw new Exception("The first component is outside the canvas");
-            }
-            if (y > programState.pixelMap.GetLength(0) || y < 0)
-            {
-                throw new Exception("The second component is outside the canvas");
-            }
-            programState.wallePosition = (y, x);
+            programState.wallePosition = (x,y);
         }
     }
 }
