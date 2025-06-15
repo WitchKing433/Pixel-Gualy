@@ -25,3 +25,5 @@ D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\System.Drawing.Common.dll
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\System.Private.Windows.Core.dll
 D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\runtimes\win\lib\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\Interpreter.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Tester\bin\Debug\net9.0\Interpreter.pdb

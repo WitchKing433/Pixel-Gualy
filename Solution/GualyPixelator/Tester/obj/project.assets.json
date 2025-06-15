@@ -62,6 +62,21 @@
           "bin/placeholder/GualyCore.dll": {}
         }
       },
+      "Interpreter/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "GualyCore": "1.0.0",
+          "Lexer": "1.0.0",
+          "Parser": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Interpreter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Interpreter.dll": {}
+        }
+      },
       "Lexer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -168,6 +183,11 @@
       "path": "../GualyCore/GualyCore.csproj",
       "msbuildProject": "../GualyCore/GualyCore.csproj"
     },
+    "Interpreter/1.0.0": {
+      "type": "project",
+      "path": "../Interpreter/Interpreter.csproj",
+      "msbuildProject": "../Interpreter/Interpreter.csproj"
+    },
     "Lexer/1.0.0": {
       "type": "project",
       "path": "../Lexer/Lexer.csproj",
@@ -182,6 +202,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "GualyCore >= 1.0.0",
+      "Interpreter >= 1.0.0",
       "Lexer >= 1.0.0",
       "Parser >= 1.0.0"
     ]
@@ -221,6 +242,9 @@
           "projectReferences": {
             "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GualyCore.csproj": {
               "projectPath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\GualyCore.csproj"
+            },
+            "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Interpreter\\Interpreter.csproj": {
+              "projectPath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Interpreter\\Interpreter.csproj"
             },
             "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Lexer.csproj": {
               "projectPath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Lexer\\Lexer.csproj"
@@ -265,5 +289,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error al obtener los datos de vulnerabilidad del paquete: No se puede cargar el índice de servicio del origen https://api.nuget.org/v3/index.json."
+    }
+  ]
 }

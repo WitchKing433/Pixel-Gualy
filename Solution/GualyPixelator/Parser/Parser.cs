@@ -18,6 +18,7 @@ namespace Parser
         int i = 0;
         public Parser(List<Token> tokens)
         {
+            labels = new Dictionary<string, int>();
             this.tokens = tokens;
             errors = new List<Error>();
             program = new List<ILineNode>();
@@ -128,6 +129,7 @@ namespace Parser
             if (EndOfLine())
             {
                 program.Add(new Label(text.Value, BuildLocation(text.Location)));
+                labels[text.Value] = text.Location.Item1;
                 i++;
                 return true;
             }
@@ -206,6 +208,7 @@ namespace Parser
                             if (!unParseable && ValidateParameters(parameters, "int"))
                             {
                                 program.Add(new GoTo(label, BuildLocation(goTo.Location), parameters[0]));
+                                i++;
                                 return true;
                             }
                         }

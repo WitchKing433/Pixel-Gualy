@@ -24,7 +24,7 @@ namespace GualyCore
         {
             index = 0;
             brushSize = 1;
-            brushShape = BrushShape.Circle;
+            brushShape = BrushShape.Square;
             wallePosition = (0, 0);
             this.labels = labels;
             variables = new Dictionary<string, object> ();

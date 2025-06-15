@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GualyCore\GualyCore.csproj" />
+    <ProjectReference Include="..\Interpreter\Interpreter.csproj" />
     <ProjectReference Include="..\Lexer\Lexer.csproj" />
     <ProjectReference Include="..\Parser\Parser.csproj" />
   </ItemGroup>

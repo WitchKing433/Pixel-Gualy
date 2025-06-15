@@ -22,6 +22,10 @@ namespace Lexer
         {
             return $"[{Type}]-'{Value}'";
         }
+        public void AddMinus()
+        {
+            Value = $"-{Value}";
+        }
     }
 
 

@@ -9,6 +9,7 @@
       "Tester/1.0.0": {
         "dependencies": {
           "GualyCore": "1.0.0",
+          "Interpreter": "1.0.0",
           "Lexer": "1.0.0",
           "Parser": "1.0.0"
         },
@@ -58,6 +59,19 @@
           }
         }
       },
+      "Interpreter/1.0.0": {
+        "dependencies": {
+          "GualyCore": "1.0.0",
+          "Lexer": "1.0.0",
+          "Parser": "1.0.0"
+        },
+        "runtime": {
+          "Interpreter.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Lexer/1.0.0": {
         "runtime": {
           "Lexer.dll": {
@@ -101,6 +115,11 @@
       "hashPath": "system.drawing.common.9.0.6.nupkg.sha512"
     },
     "GualyCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Interpreter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

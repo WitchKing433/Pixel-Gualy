@@ -78,20 +78,9 @@ namespace Lexer
                 }
 
             }
-            
+            DontLookThisFunction(tokens);
             return tokens;
         }
-
-
-
-
-
-
-
-
-
-
-
 
 
         Token MatchString (Predicate predicate, TokenType type)
@@ -140,7 +129,43 @@ namespace Lexer
         {
             return symbols.ContainsKey(symbol);
         }
+        void DontLookThisFunction(List<Token> tokens)
+        {
+            List<Token> tokenToRemove = new List<Token>();
+            Token firstToken = null;
+            Token secondToken = null;
+            bool endOfLine = false;
+            foreach (Token currentToken in tokens)
+            {
+                if (currentToken.Value == "\n")
+                {
+                    if(endOfLine)
+                        tokenToRemove.Add(currentToken);
+                    else
+                        endOfLine = true;
+                }
+                else
+                    endOfLine = false;
 
+                if (firstToken != null && secondToken != null && secondToken.Value == "-" &&
+                    (firstToken.Type != TokenType.Number && firstToken.Type != TokenType.Text && firstToken.Value != ")") &&
+                    currentToken.Type == TokenType.Number)
+                {
+                    tokenToRemove.Add(secondToken);
+                    currentToken.AddMinus();
+                }
+                firstToken = secondToken;
+                secondToken = currentToken;
+            }
+            if(secondToken.Value != "\n")
+            {
+                tokens.Add(new Token(TokenType.Symbol, "\n", (row, col + 1)));
+            }
+            foreach (Token currentToken in tokenToRemove)
+            {
+                tokens.Remove(currentToken);
+            }
+        }
         void RegisterAll()
         {
             operatorsParts.Add("&");

@@ -19,7 +19,17 @@ namespace GualyCore
 
         public void Execute(ProgramState programState)
         {
-            throw new NotImplementedException();
+            if (programState.labels.TryGetValue(destinLabel, out int value))
+            {
+                if((int)expression.Evaluate(programState) != 0)
+                {
+                    programState.index = value;
+                }
+            }
+            else
+            {
+                throw new Exception("Missing label");
+            }
         }
     }
 }

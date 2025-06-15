@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -17,7 +18,9 @@ namespace GualyCore
 
         public override object Evaluate(ProgramState programState)
         {
-            return programState.variables[Name];
+            if(programState.variables.TryGetValue(Name,out object value))
+                return value;
+            throw new Exception($"Missing variable: {Name}");
         }
     }
 }
