@@ -14,7 +14,16 @@ namespace GualyCore
 
         public override object Evaluate(ProgramState programState)
         {
-            throw new NotImplementedException();
+            try
+            {
+                int targetX = programState.wallePosition.Item1 + (int)parameters[2].Evaluate(programState);
+                int targetY = programState.wallePosition.Item2 + (int)parameters[1].Evaluate(programState);
+                return programState.EqualColor(parameters[0].Evaluate(programState).ToString(), programState.canvas[targetX,targetY]) ? 1 : 0;
+            }
+            catch
+            {
+                return 0;
+            }
         }
     }
 }

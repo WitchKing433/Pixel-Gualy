@@ -14,7 +14,13 @@ namespace GualyCore
 
         public override void Execute(ProgramState programState)
         {
-            throw new NotImplementedException();
+            int size = (int)parameters[0].Evaluate(programState);
+            if (size > 0)
+            {
+                programState.brushSize = size % 2 == 0 ? size - 1 : size;
+            }
+            else
+                throw new Exception("Brush size must be greater than 0");
         }
     }
 }

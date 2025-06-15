@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "uIx8Qoh7JK4=",
+  "dgSpecHash": "lhQ7XnQ8Hoo=",
   "success": true,
   "projectFilePath": "D:\\XARXES\\Programación\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\WitchKing\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.6\\microsoft.win32.systemevents.9.0.6.nupkg.sha512",
+    "C:\\Users\\WitchKing\\.nuget\\packages\\system.drawing.common\\9.0.6\\system.drawing.common.9.0.6.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,16 @@ namespace GualyCore
         }
         public override void Execute(ProgramState programState)
         {
-            throw new NotImplementedException();
+            string colorName = parameters[0].Evaluate(programState).ToString();
+            Color color = Color.FromName(colorName);
+            if (color.IsKnownColor)
+            {
+                programState.brushColor = color;
+            }
+            else
+            {
+                throw new Exception("Invalid color");             
+            }
         }
     }
 }

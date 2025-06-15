@@ -40,11 +40,11 @@ namespace GualyCore
             }
             set
             {
-                if (x > Width || x < 0)
+                if (x >= Width || x < 0)
                 {
                     throw new Exception("The first component is outside the canvas");
                 }
-                if (y > Height || y < 0)
+                if (y >= Height || y < 0)
                 {
                     throw new Exception("The second component is outside the canvas");
                 }
