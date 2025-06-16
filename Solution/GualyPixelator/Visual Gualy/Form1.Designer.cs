@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             archivoToolStripMenuItem = new ToolStripMenuItem();
             nuevoToolStripMenuItem = new ToolStripMenuItem();
@@ -147,7 +148,7 @@
             // ejecutarTodoToolStripMenuItem
             // 
             ejecutarTodoToolStripMenuItem.Name = "ejecutarTodoToolStripMenuItem";
-            ejecutarTodoToolStripMenuItem.Size = new Size(224, 26);
+            ejecutarTodoToolStripMenuItem.Size = new Size(181, 26);
             ejecutarTodoToolStripMenuItem.Text = "Ejecutar todo";
             ejecutarTodoToolStripMenuItem.Click += ejecutarTodoToolStripMenuItem_Click;
             // 
@@ -155,14 +156,14 @@
             // 
             depurarToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { iniciarDepuraciónToolStripMenuItem, siguienteToolStripMenuItem, detenerToolStripMenuItem });
             depurarToolStripMenuItem.Name = "depurarToolStripMenuItem";
-            depurarToolStripMenuItem.Size = new Size(224, 26);
+            depurarToolStripMenuItem.Size = new Size(181, 26);
             depurarToolStripMenuItem.Text = "Depurar";
             // 
             // iniciarDepuraciónToolStripMenuItem
             // 
             iniciarDepuraciónToolStripMenuItem.Name = "iniciarDepuraciónToolStripMenuItem";
             iniciarDepuraciónToolStripMenuItem.ShortcutKeyDisplayString = "F6";
-            iniciarDepuraciónToolStripMenuItem.Size = new Size(224, 26);
+            iniciarDepuraciónToolStripMenuItem.Size = new Size(178, 26);
             iniciarDepuraciónToolStripMenuItem.Text = "Iniciar";
             iniciarDepuraciónToolStripMenuItem.Click += iniciarDepuraciónToolStripMenuItem_Click;
             // 
@@ -170,7 +171,7 @@
             // 
             siguienteToolStripMenuItem.Name = "siguienteToolStripMenuItem";
             siguienteToolStripMenuItem.ShortcutKeyDisplayString = "F7";
-            siguienteToolStripMenuItem.Size = new Size(224, 26);
+            siguienteToolStripMenuItem.Size = new Size(178, 26);
             siguienteToolStripMenuItem.Text = "Siguiente";
             siguienteToolStripMenuItem.Click += siguienteToolStripMenuItem_Click;
             // 
@@ -178,7 +179,7 @@
             // 
             detenerToolStripMenuItem.Name = "detenerToolStripMenuItem";
             detenerToolStripMenuItem.ShortcutKeyDisplayString = "F8";
-            detenerToolStripMenuItem.Size = new Size(224, 26);
+            detenerToolStripMenuItem.Size = new Size(178, 26);
             detenerToolStripMenuItem.Text = "Detener";
             detenerToolStripMenuItem.Click += detenerToolStripMenuItem_Click;
             // 
@@ -284,6 +285,7 @@
             ClientSize = new Size(968, 566);
             Controls.Add(splitContainer1);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Visual Gualy";

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|solutionrelative:visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\visual gualy\\visual gualy.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|solutionrelative:visual gualy\\visual gualy.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|solutionrelative:visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1FAD57-F774-498D-8A65-4F3D5EE2E1A9}|Visual Gualy\\Visual Gualy.csproj|solutionrelative:visual gualy\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ABB134BE-299B-4231-886A-13DC051A54C1}|Parser\\Parser.csproj|d:\\xarxes\\programaci\u00F3n\\pixel-gualy\\solution\\gualypixelator\\parser\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +38,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Visual Gualy",
+              "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Visual Gualy\\Visual Gualy.csproj",
+              "RelativeDocumentMoniker": "Visual Gualy\\Visual Gualy.csproj",
+              "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Visual Gualy\\Visual Gualy.csproj",
+              "RelativeToolTip": "Visual Gualy\\Visual Gualy.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-16T04:56:21.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Parser.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Parser\\Parser.cs",
               "RelativeDocumentMoniker": "Parser\\Parser.cs",
@@ -46,25 +62,24 @@
               "RelativeToolTip": "Parser\\Parser.cs",
               "ViewState": "AgIAAKsBAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T03:59:08.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T03:59:08.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Visual Gualy\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Visual Gualy\\Form1.Designer.cs",
               "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Visual Gualy\\Form1.Designer.cs",
               "RelativeToolTip": "Visual Gualy\\Form1.Designer.cs",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAowCIBAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T02:53:03.633Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Interpreter.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Interpreter\\Interpreter.cs",
               "RelativeDocumentMoniker": "Interpreter\\Interpreter.cs",
@@ -72,12 +87,11 @@
               "RelativeToolTip": "Interpreter\\Interpreter.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAWwF0AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T01:54:27.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T01:54:27.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ProgramState.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\GualyCore\\ProgramState.cs",
               "RelativeDocumentMoniker": "GualyCore\\ProgramState.cs",
@@ -89,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Visual Gualy\\Form1.cs",
               "RelativeDocumentMoniker": "Visual Gualy\\Form1.cs",
               "ToolTip": "D:\\XARXES\\Programaci\u00F3n\\Pixel-Gualy\\Solution\\GualyPixelator\\Visual Gualy\\Form1.cs",
               "RelativeToolTip": "Visual Gualy\\Form1.cs",
-              "ViewState": "AgIAABIBAAAAAAAAAAAYwCMBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T00:26:33.629Z",
               "EditorCaption": ""
