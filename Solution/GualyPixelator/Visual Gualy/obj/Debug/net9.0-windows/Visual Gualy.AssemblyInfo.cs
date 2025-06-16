@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Visual Gualy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5211e46f17aea00169607f8924b109a57e69dcaf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+866ad065297534a26ca0db19510991595b48217e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Visual Gualy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Visual Gualy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

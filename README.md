@@ -110,8 +110,8 @@ En este lenguaje, los booleanos se interpretan como enteros, al estilo C++:
 - `false` → `0`
 
 Las operaciones booleanas se comportan así:  
-> - `A && B` se evalúa como `A * B`.  
-> - `A || B` se evalúa como `A + B > 0`.  
+> - `A && B` se evalúa como `A * B != 0`.  
+> - `A || B` se evalúa como `A + B != 0`.  
 > - `!A` devuelve `1` si `A == 0`, y `0` si `A != 0`.  
 >
 > Esto permite mezclar expresiones booleanas y aritméticas sin conversiones explícitas.
@@ -230,8 +230,8 @@ In this language, booleans are treated as integers (C++ style):
 - `false` → `0`
 
 Boolean operations behave as follows:  
-> - `A && B` is evaluated as `A * B`.  
-> - `A || B` is evaluated as `(A + B) > 0`.  
+> - `A && B` is evaluated as `A * B != 0`.   
+> - `A || B` is evaluated as `(A + B) != 0`.  
 > - `!A` returns `1` if `A == 0`, otherwise `0`.  
 >
 > This enables mixing boolean and arithmetic expressions without explicit conversions.
