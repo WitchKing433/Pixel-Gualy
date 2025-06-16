@@ -157,7 +157,7 @@ namespace Lexer
                 firstToken = secondToken;
                 secondToken = currentToken;
             }
-            if(secondToken.Value != "\n")
+            if(secondToken != null && secondToken.Value != "\n")
             {
                 tokens.Add(new Token(TokenType.Symbol, "\n", (row, col + 1)));
             }

@@ -6,58 +6,101 @@ namespace Interpreter
 {
     public class Interpreter
     {
-        string code;
-        int size;
-        int index = 0;
-        string folderPath;
-        string fullPath;
-        List<Error> errors = new List<Error>();
-        public Interpreter(string code, int size)
+        public int Index {  get => programState.index; }
+        Dictionary<string, int> labels;
+        List<ILineNode> program;
+        ProgramState programState;
+        public Interpreter() { }
+        
+        public string Compile(string code, string outputPath, string fileName)
         {
-            this.size = size; 
-            this.code = code.Replace("\r", "");
-            code.Replace("\r", "");
-            folderPath = AppDomain.CurrentDomain.BaseDirectory;
-            fullPath = Path.Combine(folderPath, "ErrorsLog.txt");
-        }
-        public bool PaintAll()
-        {
+            code = code.Replace("\r", "");
             string sErrors = "";
-            index = 0;
             Tokenizer tokenizer = new Tokenizer(code);
             List<Token> tokens = tokenizer.Tokenize();
-            errors = tokenizer.errors;
+            List<Error> errors = tokenizer.errors;
             if (errors.Count == 0)
             {
                 Parser.Parser parser = new Parser.Parser(tokens);
-                List<ILineNode> program = parser.Parse();
+                labels = parser.labels;
+                program = parser.Parse();
                 errors = parser.errors;
                 if (errors.Count == 0)
                 {
-                    ProgramState programState = new ProgramState((size,size), parser.labels);
-                    try
-                    {
-                        int iterations = 0;
-                        for (; programState.index < program.Count; programState.index++, iterations++)
-                        {
-                            program[programState.index].Execute(programState);
-                            if (iterations == int.MaxValue)
-                                throw new Exception("Infinite loop");
-                        }
-                        programState.CreateImage();
-                        return true;
-                    }
-                    catch(Exception exc)
-                    {
-                        sErrors += exc.Message;
-                    }
+                    return "";
                 }
             }
-            sErrors += errorsToString();
-            File.WriteAllText(fullPath, sErrors);
-            return false;
+            sErrors += errorsToString(errors);
+            string outputPathFileName = Path.Combine(outputPath, Path.GetFileName(fileName) + ".err");
+            File.WriteAllText(outputPathFileName, sErrors);
+            return outputPathFileName;
         }
-        string errorsToString()
+        public string PaintAll(int size, string outputPath, string fileName)
+        {
+            try
+            {
+                if (size < 1)
+                    throw new Exception("Invalid canvas size");
+                if (program == null)
+                    throw new Exception("Cant paint without a compiled program");
+                ProgramState programState = new ProgramState((size, size), labels);
+
+                int iterations = 0;
+                for (; programState.index < program.Count; programState.index++, iterations++)
+                {
+                    program[programState.index].Execute(programState);
+                    if (iterations == int.MaxValue)
+                        throw new Exception("Infinite loop");
+                }
+                return programState.CreateImage(outputPath, fileName);
+            }
+            catch(Exception exc)
+            {
+                string outputPathFileName = Path.Combine(outputPath, Path.GetFileName(fileName) + ".err");
+                File.WriteAllText(outputPathFileName, exc.Message);
+                return outputPathFileName;
+            }
+            
+        }
+        public string PaintBegin(int size, string outputPath, string fileName)
+        {
+            try
+            {
+                if (size < 1)
+                    throw new Exception("Invalid canvas size");
+                if (program == null)
+                    throw new Exception("Cant paint without a compiled program");
+                programState = new ProgramState((size, size), labels);
+                return "";
+            }
+            catch (Exception exc)
+            {
+                string outputPathFileName = Path.Combine(outputPath, Path.GetFileName(fileName) + ".err");
+                File.WriteAllText(outputPathFileName, exc.Message);
+                return outputPathFileName;
+            }
+
+        }
+        public string PaintCurrent(string outputPath, string fileName)
+        {
+            try
+            {
+                if (programState != null && programState.index < program.Count)
+                {
+                    program[programState.index].Execute(programState);
+                    programState.index++;
+                    return programState.CreateImage(outputPath, fileName);
+                }
+                throw new Exception("Program execution ended");
+            }
+            catch (Exception exc)
+            {
+                string outputPathFileName = Path.Combine(outputPath, Path.GetFileName(fileName) + ".err");
+                File.WriteAllText(outputPathFileName, exc.Message);
+                return outputPathFileName;
+            }
+        }
+        string errorsToString(List<Error> errors)
         {
             string sErrors = "";
             for (int i = 0; i < errors.Count; i++)

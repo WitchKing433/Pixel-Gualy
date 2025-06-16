@@ -14,7 +14,11 @@ namespace GualyCore
 
         public override object Evaluate(ProgramState programState)
         {
-            return leftOperand.ArithmeticEvaluate(programState) % rightOperand.ArithmeticEvaluate(programState);
+            int left = leftOperand.ArithmeticEvaluate(programState);
+            int right = rightOperand.ArithmeticEvaluate(programState);
+            if (right == 0)
+                throw new Exception("Invalid expression, cannot divide by 0");
+            return left % right;
         }
     }
 }

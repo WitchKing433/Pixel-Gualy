@@ -1,0 +1,10 @@
+Spawn(0,500)
+i <- 5
+aea
+Size(100)
+Color("Gold")
+DrawLine(1,0,100)
+i <- i - 1
+GoTo[aea](i > 0)
+Color("Red")
+DrawCircle(0,0,5)

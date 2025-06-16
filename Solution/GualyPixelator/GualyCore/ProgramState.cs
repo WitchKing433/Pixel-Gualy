@@ -24,7 +24,7 @@ namespace GualyCore
         {
             index = 0;
             brushSize = 1;
-            brushShape = BrushShape.Square;
+            brushShape = BrushShape.Circle;
             wallePosition = (0, 0);
             this.labels = labels;
             variables = new Dictionary<string, object> ();
@@ -109,10 +109,9 @@ namespace GualyCore
             return color1.IsKnownColor && color1.ToArgb() == color.ToArgb();
         }
 
-        public void CreateImage()
+        public string CreateImage(string outputPath, string fileName)
         {
-            string folderPath = AppDomain.CurrentDomain.BaseDirectory;
-            string fullPath = Path.Combine(folderPath, "Canvas.png");
+            string fullPath = Path.Combine(outputPath, fileName+ ".png");
             var image = new Bitmap(canvas.Width, canvas.Height);
 
             for (int y = 0; y < canvas.Height; y++)
@@ -124,7 +123,7 @@ namespace GualyCore
             }
 
             image.Save(fullPath,ImageFormat.Png);
-            //Console.WriteLine(fullPath);
+            return fullPath;
         }
        
     }

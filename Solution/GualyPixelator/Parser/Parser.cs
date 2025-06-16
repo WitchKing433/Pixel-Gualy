@@ -128,10 +128,14 @@ namespace Parser
             Token text = tokens[i];
             if (EndOfLine())
             {
+                bool a = true;
                 program.Add(new Label(text.Value, BuildLocation(text.Location)));
-                labels[text.Value] = text.Location.Item1;
+                if(!labels.ContainsKey(text.Value))
+                    labels[text.Value] = text.Location.Item1 - 1;
+                else
+                    a = false;
                 i++;
-                return true;
+                return a;
             }
             i++;
             if (IsInRange() && tokens[i].Value == "<-")

@@ -1,0 +1,32 @@
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Visual Gualy.exe
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Visual Gualy.deps.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Visual Gualy.runtimeconfig.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Visual Gualy.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Visual Gualy.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual_Gualy.Form1.resources
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.csproj.GenerateResource.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.GeneratedMSBuildEditorConfig.editorconfig
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.AssemblyInfoInputs.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.AssemblyInfo.cs
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.csproj.CoreCompileInputs.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.sourcelink.json
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\refint\Visual Gualy.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.genruntimeconfig.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\ref\Visual Gualy.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Microsoft.Win32.SystemEvents.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\System.Drawing.Common.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\System.Private.Windows.Core.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\Microsoft.Win32.SystemEvents.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\GualyCore.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Interpreter.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Lexer.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Parser.dll
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Interpreter.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\GualyCore.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Lexer.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\bin\Debug\net9.0-windows\Parser.pdb
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual Gualy.csproj.AssemblyReference.cache
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual G.A0CF6698.Up2Date
+D:\XARXES\Programación\Pixel-Gualy\Solution\GualyPixelator\Visual Gualy\obj\Debug\net9.0-windows\Visual_Gualy.FormPreferencias.resources
