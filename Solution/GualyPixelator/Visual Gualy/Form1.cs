@@ -1,6 +1,8 @@
 using GualyCore;
 using Interpreter;
 using System;
+using System.Drawing.Drawing2D;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,10 +23,13 @@ namespace Visual_Gualy
 
         private void guardarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 0 && saveFileDialog1.ShowDialog(this) == DialogResult.OK)
-            {
-                SaveAs();
-            }
+            if (dataGridView1.Rows.Count == 0)
+                return;
+
+            if (saveFileDialog1.ShowDialog(this) != DialogResult.OK)
+                return;
+            fileName = saveFileDialog1.FileName;
+            SaveAs();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -35,17 +40,17 @@ namespace Visual_Gualy
         private void cargarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1 = new OpenFileDialog();
-            DialogResult dialogResult = openFileDialog1.ShowDialog(this);
-            if (dialogResult == DialogResult.OK)
+            if (openFileDialog1.ShowDialog(this) == DialogResult.OK)
             {
+                ClearProject();
                 outputPath = Path.GetDirectoryName(openFileDialog1.FileName);
-                fileName = Path.GetFileName(openFileDialog1.FileName);
+                fileName = openFileDialog1.FileName;
                 string[] linesOfCode = File.ReadAllLines(openFileDialog1.FileName);
                 dataGridView1.SuspendLayout();
                 dataGridView1.Rows.Clear();
                 for (int iline = 0; iline < linesOfCode.Length; iline++)
                 {
-                    dataGridView1.Rows.Add((iline + 1).ToString(), linesOfCode[iline]);
+                    dataGridView1.Rows.Add(linesOfCode[iline]);
                 }
                 dataGridView1.ResumeLayout();
             }
@@ -53,32 +58,48 @@ namespace Visual_Gualy
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersVisible = true;
             dataGridView1.ReadOnly = false;
             dataGridView1.AllowUserToAddRows = true;
             dataGridView1.AllowUserToDeleteRows = true;
             dataGridView1.EditMode = DataGridViewEditMode.EditOnKeystrokeOrF2;
-            dataGridView1.Columns["linea"].ReadOnly = true;
-            dataGridView1.Columns["linea"].Width = 60;
-            dataGridView1.Columns["linea"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-
-            dataGridView1.RowsAdded += (s, e) => UpdateLineNumbers();
-            dataGridView1.RowsRemoved += (s, e) => UpdateLineNumbers();
+            dataGridView1.RowPostPaint -= DataGridView1_RowPostPaint;
+            dataGridView1.RowPostPaint += DataGridView1_RowPostPaint;
 
 
-            canvasSize = Math.Min(pictureBox1.Width, pictureBox1.Height);
+            canvasSize = 200;
 
-            saveFileDialog1 = new SaveFileDialog();
-        }
-
-        void UpdateLineNumbers()
-        {
-            for (int iline = 0; iline < dataGridView1.Rows.Count; iline++)
+            saveFileDialog1 = new SaveFileDialog()
             {
-                if (dataGridView1.Rows[iline].IsNewRow)
-                    continue;
-                dataGridView1.Rows[iline].Cells["Linea"].Value = (iline + 1).ToString();
-            }
+                Filter = "Pixel Gualy Files (*.pw)|*.pw",
+                DefaultExt = "pw",
+                AddExtension = true,
+                Title = "Guardar archivo Gualy"
+            };
+        }
+        private void DataGridView1_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            var grid = (DataGridView)sender;
+            string rowNumber = (e.RowIndex + 1).ToString();
+
+            var headerBounds = new Rectangle(
+                e.RowBounds.Left,
+                e.RowBounds.Top,
+                grid.RowHeadersWidth,
+                e.RowBounds.Height);
+
+            Size textSize = TextRenderer.MeasureText(rowNumber, grid.RowHeadersDefaultCellStyle.Font);
+            if (grid.RowHeadersWidth < textSize.Width + 20)
+                grid.RowHeadersWidth = textSize.Width + 20;
+
+            TextRenderer.DrawText(
+                e.Graphics,
+                rowNumber,
+                grid.RowHeadersDefaultCellStyle.Font,
+                headerBounds,
+                grid.RowHeadersDefaultCellStyle.ForeColor,
+                TextFormatFlags.VerticalCenter | TextFormatFlags.HorizontalCenter
+            );
         }
 
         private void ejecutarTodoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -87,7 +108,7 @@ namespace Visual_Gualy
                 dataGridView1.Rows
                     .Cast<DataGridViewRow>()
                     .Where(fila => !fila.IsNewRow)
-                    .Select(fila => fila.Cells[1].Value?.ToString() ?? ""));
+                    .Select(fila => fila.Cells[0].Value?.ToString() ?? ""));
 
             Interpreter.Interpreter interpreter = new();
             string outputFullPathFileName = interpreter.Compile(code, outputPath, fileName);
@@ -101,9 +122,7 @@ namespace Visual_Gualy
             string extensionFile = Path.GetExtension(outputFullPathFileName);
             if (extensionFile == ".png")
             {
-                pictureBox1.Visible = true;
-                textBoxErrors.Visible = false;
-                pictureBox1.ImageLocation = outputFullPathFileName;
+                DisplayImage(outputFullPathFileName);
             }
             else
             {
@@ -135,7 +154,6 @@ namespace Visual_Gualy
                     if (currentDataGridViewRow != null && !currentDataGridViewRow.IsNewRow)
                     {
                         dataGridView1.Rows.Remove(currentDataGridViewRow);
-                        UpdateLineNumbers();
                     }
                 }
             }
@@ -147,7 +165,7 @@ namespace Visual_Gualy
                 }
                 int insertIndex = dataGridView1.CurrentRow?.Index + 1 ?? dataGridView1.Rows.Count;
                 dataGridView1.Rows.Insert(insertIndex);
-                dataGridView1.CurrentCell = dataGridView1.Rows[insertIndex].Cells[1];
+                dataGridView1.CurrentCell = dataGridView1.Rows[insertIndex].Cells[0];
                 dataGridView1.BeginEdit(true);
             }
             else if (e.KeyCode == Keys.F5)
@@ -171,16 +189,23 @@ namespace Visual_Gualy
         void NewGualy()
         {
             outputPath = Path.GetFullPath(Application.ExecutablePath);
-            fileName = "Annonimous.pw";
+            fileName = "";
             dataGridView1.Rows.Clear();
         }
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 0 && saveFileDialog1.FileName != string.Empty && saveFileDialog1.ShowDialog(this) == DialogResult.OK)
+            if (dataGridView1.Rows.Count == 0)
+                return;
+
+            if (string.IsNullOrEmpty(fileName))
             {
-                SaveAs();
+                if (saveFileDialog1.ShowDialog(this) != DialogResult.OK)
+                    return;
+                fileName= saveFileDialog1.FileName;
             }
+
+            SaveAs();
         }
 
         void SaveAs()
@@ -190,7 +215,7 @@ namespace Visual_Gualy
             {
                 if (dataGridViewRow.IsNewRow)
                     continue;
-                var valueCell = dataGridViewRow.Cells[1].Value;
+                var valueCell = dataGridViewRow.Cells[0].Value;
                 string instruction = valueCell?.ToString() ?? string.Empty;
                 if (instruction != null)
                 {
@@ -198,8 +223,7 @@ namespace Visual_Gualy
                 }
             }
 
-            File.WriteAllText(saveFileDialog1.FileName, stringBuilder.ToString());
-            fileName = Path.GetFileName(saveFileDialog1.FileName);
+            File.WriteAllText(fileName, stringBuilder.ToString());
         }
 
         private void lienzoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -228,12 +252,16 @@ namespace Visual_Gualy
 
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ClearProject();
+        }
+
+        void ClearProject()
+        {
             dataGridView1.Rows.Clear();
-            fileName = "NewPixelGualy";
+            fileName = "";
             outputPath = Path.GetDirectoryName(Application.ExecutablePath);
             pictureBox1.Image = null;
             textBoxErrors.Text = string.Empty;
-            saveFileDialog1.FileName = string.Empty;
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -243,12 +271,14 @@ namespace Visual_Gualy
 
         private void guardarToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            if (dataGridView1.Rows.Count > 0 &&
-                (fileName != "NewPixelGualy" ||
-                (fileName == "NewPixelGualy" && saveFileDialog1.ShowDialog(this) == DialogResult.OK)))
-            {
-                SaveAs();
+            if (dataGridView1.Rows.Count == 0)
+                return;
+            if (string.IsNullOrEmpty(fileName)) {
+                if (saveFileDialog1.ShowDialog(this) != DialogResult.OK)
+                    return;
+                fileName = saveFileDialog1.FileName;
             }
+            SaveAs();
         }
 
         private void iniciarDepuraciónToolStripMenuItem_Click(object sender, EventArgs e)
@@ -257,18 +287,19 @@ namespace Visual_Gualy
                 dataGridView1.Rows
                     .Cast<DataGridViewRow>()
                     .Where(fila => !fila.IsNewRow)
-                    .Select(fila => fila.Cells[1].Value?.ToString() ?? ""));
+                    .Select(fila => fila.Cells[0].Value?.ToString() ?? ""));
 
             interpreterDebugger = new();
             string outputFullPathFileName = interpreterDebugger.Compile(code, outputPath, fileName);
             if (outputFullPathFileName == "")
             {
                 outputFullPathFileName = interpreterDebugger.PaintBegin(canvasSize, outputPath, fileName);
-                if (outputFullPathFileName == "") {
+                if (outputFullPathFileName == "")
+                {
                     if (interpreterDebugger.Index < dataGridView1.Rows.Count)
                     {
                         dataGridView1.Rows[interpreterDebugger.Index].Selected = true;
-                        dataGridView1.CurrentCell = dataGridView1.Rows[interpreterDebugger.Index].Cells[1];
+                        dataGridView1.CurrentCell = dataGridView1.Rows[interpreterDebugger.Index].Cells[0];
                         dataGridView1.FirstDisplayedScrollingRowIndex = interpreterDebugger.Index;
                         //outputFullPathFileName = interpreterDebugger.PaintCurrent(outputPath, fileName);
                     }
@@ -287,20 +318,74 @@ namespace Visual_Gualy
                 string outputFullPathFileName = interpreterDebugger.PaintCurrent(outputPath, fileName);
                 CheckOutput(outputFullPathFileName);
                 dataGridView1.Rows[interpreterDebugger.Index].Selected = true;
-                dataGridView1.CurrentCell = dataGridView1.Rows[interpreterDebugger.Index].Cells[1];
+                dataGridView1.CurrentCell = dataGridView1.Rows[interpreterDebugger.Index].Cells[0];
                 dataGridView1.FirstDisplayedScrollingRowIndex = interpreterDebugger.Index;
             }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-          
+
         }
 
         private void detenerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows[interpreterDebugger.Index].Selected = false;
             interpreterDebugger = null;
+        }
+
+        private void cargarImagenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (openImageDialog.ShowDialog(this) != DialogResult.OK)
+                return;
+
+            string rutaOriginal = openImageDialog.FileName;
+            string newCode = Interpreter.Interpreter.ImageToCode(rutaOriginal);
+            using var sfd = new SaveFileDialog()
+            {
+                Filter = "Archivos de texto|*.pw",
+                Title = "Guardar Código Generado"
+            };
+            if (sfd.ShowDialog(this) != DialogResult.OK)
+                return;
+            File.WriteAllText(sfd.FileName, newCode, Encoding.UTF8);
+            DisplayImage(rutaOriginal);
+        }
+
+        private OpenFileDialog openImageDialog = new OpenFileDialog()
+        {
+            Filter = "Imágenes|*.png;*.jpg;*.jpeg;*.bmp",
+            Title = "Seleccione una imagen"
+        };
+
+        private void DisplayImage(string filePath)
+        {
+            pictureBox1.Image?.Dispose();
+
+            using var original = new Bitmap(filePath);
+
+            int boxW = pictureBox1.Width;
+            int boxH = pictureBox1.Height;
+            float scale = Math.Min((float)boxW / original.Width,
+                                   (float)boxH / original.Height);
+
+            int newW = Math.Max(1, (int)(original.Width * scale));
+            int newH = Math.Max(1, (int)(original.Height * scale));
+
+            var finalBmp = new Bitmap(newW, newH, original.PixelFormat);
+            using (var g = Graphics.FromImage(finalBmp))
+            {
+                g.InterpolationMode = InterpolationMode.NearestNeighbor;
+                g.PixelOffsetMode = PixelOffsetMode.Half;
+                g.SmoothingMode = SmoothingMode.None;
+                g.Clear(this.BackColor);
+                g.DrawImage(original, 0, 0, newW, newH);
+            }
+
+            pictureBox1.Image = finalBmp;
+            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+            pictureBox1.Visible = true;
+            textBoxErrors.Visible = false;
         }
     }
 }

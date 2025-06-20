@@ -37,6 +37,7 @@
             guardarToolStripMenuItem = new ToolStripMenuItem();
             guardarToolStripMenuItem1 = new ToolStripMenuItem();
             guardarImagenToolStripMenuItem = new ToolStripMenuItem();
+            cargarImagenToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
             preferenciasToolStripMenuItem = new ToolStripMenuItem();
             lienzoToolStripMenuItem = new ToolStripMenuItem();
@@ -48,7 +49,6 @@
             detenerToolStripMenuItem = new ToolStripMenuItem();
             splitContainer1 = new SplitContainer();
             dataGridView1 = new DataGridView();
-            Linea = new DataGridViewTextBoxColumn();
             Codigo = new DataGridViewTextBoxColumn();
             textBoxErrors = new TextBox();
             pictureBox1 = new PictureBox();
@@ -77,7 +77,7 @@
             // 
             // archivoToolStripMenuItem
             // 
-            archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nuevoToolStripMenuItem, cargarToolStripMenuItem, guardarToolStripMenuItem, guardarToolStripMenuItem1, guardarImagenToolStripMenuItem, salirToolStripMenuItem });
+            archivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { nuevoToolStripMenuItem, cargarToolStripMenuItem, guardarToolStripMenuItem, guardarToolStripMenuItem1, guardarImagenToolStripMenuItem, cargarImagenToolStripMenuItem, salirToolStripMenuItem });
             archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             archivoToolStripMenuItem.Size = new Size(73, 24);
             archivoToolStripMenuItem.Text = "Archivo";
@@ -116,6 +116,13 @@
             guardarImagenToolStripMenuItem.Size = new Size(208, 26);
             guardarImagenToolStripMenuItem.Text = "Guardar Imagen...";
             guardarImagenToolStripMenuItem.Click += guardarImagenToolStripMenuItem_Click;
+            // 
+            // cargarImagenToolStripMenuItem
+            // 
+            cargarImagenToolStripMenuItem.Name = "cargarImagenToolStripMenuItem";
+            cargarImagenToolStripMenuItem.Size = new Size(208, 26);
+            cargarImagenToolStripMenuItem.Text = "Cargar Imagen...";
+            cargarImagenToolStripMenuItem.Click += cargarImagenToolStripMenuItem_Click;
             // 
             // salirToolStripMenuItem
             // 
@@ -205,7 +212,7 @@
             // 
             dataGridView1.AllowUserToResizeRows = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Linea, Codigo });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Codigo });
             dataGridView1.Dock = DockStyle.Fill;
             dataGridView1.Location = new Point(0, 0);
             dataGridView1.Name = "dataGridView1";
@@ -214,17 +221,6 @@
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.KeyDown += dataGridView1_KeyDown;
-            // 
-            // Linea
-            // 
-            Linea.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            Linea.HeaderText = "Linea";
-            Linea.MinimumWidth = 6;
-            Linea.Name = "Linea";
-            Linea.ReadOnly = true;
-            Linea.Resizable = DataGridViewTriState.False;
-            Linea.SortMode = DataGridViewColumnSortMode.NotSortable;
-            Linea.Width = 50;
             // 
             // Codigo
             // 
@@ -326,11 +322,11 @@
         private SaveFileDialog saveFileDialog1;
         private ContextMenuStrip contextMenuStrip1;
         private SaveFileDialog saveImageDialog;
-        private DataGridViewTextBoxColumn Linea;
-        private DataGridViewTextBoxColumn Codigo;
         private ToolStripMenuItem depurarToolStripMenuItem;
         private ToolStripMenuItem iniciarDepuraciónToolStripMenuItem;
         private ToolStripMenuItem siguienteToolStripMenuItem;
         private ToolStripMenuItem detenerToolStripMenuItem;
+        private ToolStripMenuItem cargarImagenToolStripMenuItem;
+        private DataGridViewTextBoxColumn Codigo;
     }
 }

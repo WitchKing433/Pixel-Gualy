@@ -6,12 +6,12 @@ namespace Interpreter
 {
     public class Interpreter
     {
-        public int Index {  get => programState.index; }
+        public int Index { get => programState.index; }
         Dictionary<string, int> labels;
         List<ILineNode> program;
         ProgramState programState;
         public Interpreter() { }
-        
+
         public string Compile(string code, string outputPath, string fileName)
         {
             code = code.Replace("\r", "");
@@ -54,13 +54,13 @@ namespace Interpreter
                 }
                 return programState.CreateImage(outputPath, fileName);
             }
-            catch(Exception exc)
+            catch (Exception exc)
             {
                 string outputPathFileName = Path.Combine(outputPath, Path.GetFileName(fileName) + ".err");
                 File.WriteAllText(outputPathFileName, exc.Message);
                 return outputPathFileName;
             }
-            
+
         }
         public string PaintBegin(int size, string outputPath, string fileName)
         {
@@ -108,6 +108,10 @@ namespace Interpreter
                 sErrors += (errors[i].ToString() + '\n');
             }
             return sErrors;
+        }
+        public static string ImageToCode(string path)
+        {
+            return ProgramState.ImageToCode(path);
         }
     }
 }
