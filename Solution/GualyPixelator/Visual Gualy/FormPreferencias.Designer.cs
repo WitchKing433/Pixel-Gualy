@@ -32,13 +32,16 @@
             numericUpDownCanvasSize = new NumericUpDown();
             button1 = new Button();
             button2 = new Button();
+            numericUpDownImageScale = new NumericUpDown();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)numericUpDownCanvasSize).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownImageScale).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(121, 57);
+            label1.Location = new Point(121, 35);
             label1.Name = "label1";
             label1.Size = new Size(133, 20);
             label1.TabIndex = 1;
@@ -46,7 +49,7 @@
             // 
             // numericUpDownCanvasSize
             // 
-            numericUpDownCanvasSize.Location = new Point(260, 55);
+            numericUpDownCanvasSize.Location = new Point(260, 33);
             numericUpDownCanvasSize.Maximum = new decimal(new int[] { 2000000000, 0, 0, 0 });
             numericUpDownCanvasSize.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDownCanvasSize.Name = "numericUpDownCanvasSize";
@@ -73,6 +76,24 @@
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
             // 
+            // numericUpDownImageScale
+            // 
+            numericUpDownImageScale.Location = new Point(260, 81);
+            numericUpDownImageScale.Maximum = new decimal(new int[] { 2000, 0, 0, 0 });
+            numericUpDownImageScale.Name = "numericUpDownImageScale";
+            numericUpDownImageScale.Size = new Size(77, 27);
+            numericUpDownImageScale.TabIndex = 5;
+            numericUpDownImageScale.Value = new decimal(new int[] { 500, 0, 0, 0 });
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(106, 83);
+            label2.Name = "label2";
+            label2.Size = new Size(148, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Tamaño de escalado:";
+            // 
             // FormPreferencias
             // 
             AcceptButton = button1;
@@ -80,6 +101,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = button2;
             ClientSize = new Size(475, 208);
+            Controls.Add(label2);
+            Controls.Add(numericUpDownImageScale);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(numericUpDownCanvasSize);
@@ -88,6 +111,7 @@
             Name = "FormPreferencias";
             Text = "Preferencias";
             ((System.ComponentModel.ISupportInitialize)numericUpDownCanvasSize).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDownImageScale).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -98,5 +122,7 @@
         private NumericUpDown numericUpDownCanvasSize;
         private Button button1;
         private Button button2;
+        private NumericUpDown numericUpDownImageScale;
+        private Label label2;
     }
 }

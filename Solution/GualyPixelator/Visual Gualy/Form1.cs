@@ -14,6 +14,7 @@ namespace Visual_Gualy
         string outputPath = Path.GetDirectoryName(Application.ExecutablePath);
         string fileName = "NewPixelGualy";
         int canvasSize;
+        int imageScale;
         Interpreter.Interpreter interpreterDebugger;
 
         public Form1()
@@ -68,6 +69,7 @@ namespace Visual_Gualy
 
 
             canvasSize = 200;
+            imageScale = 500;
 
             saveFileDialog1 = new SaveFileDialog()
             {
@@ -228,10 +230,11 @@ namespace Visual_Gualy
 
         private void lienzoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormPreferencias formPreferencias = new FormPreferencias(canvasSize);
+            FormPreferencias formPreferencias = new FormPreferencias(canvasSize, imageScale);
             if (formPreferencias.ShowDialog(this) == DialogResult.OK)
             {
                 canvasSize = (int)formPreferencias.CanvasSize;
+                imageScale = (int)formPreferencias.ImageScale;
             }
         }
 
@@ -340,7 +343,7 @@ namespace Visual_Gualy
                 return;
 
             string rutaOriginal = openImageDialog.FileName;
-            string newCode = Interpreter.Interpreter.ImageToCode(rutaOriginal);
+            string newCode = Interpreter.Interpreter.ImageToCode(rutaOriginal, imageScale);
             using var sfd = new SaveFileDialog()
             {
                 Filter = "Archivos de texto|*.pw",

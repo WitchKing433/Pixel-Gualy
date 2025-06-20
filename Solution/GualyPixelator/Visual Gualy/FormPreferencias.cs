@@ -16,10 +16,16 @@ namespace Visual_Gualy
         public decimal CanvasSize { 
             get { return numericUpDownCanvasSize.Value; }  
         }
-        public FormPreferencias(int canvasSize)
+        public decimal ImageScale
+        {
+            get { return numericUpDownImageScale.Value; }
+        }
+
+        public FormPreferencias(int canvasSize, int imageScale)
         {
             InitializeComponent();
             numericUpDownCanvasSize.Value = canvasSize;
+            numericUpDownImageScale.Value= imageScale;
         }
 
         private void button1_Click(object sender, EventArgs e)

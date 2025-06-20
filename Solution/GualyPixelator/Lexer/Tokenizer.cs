@@ -34,6 +34,7 @@ namespace Lexer
             RegisterAll();
             List<Token> tokens = new List<Token>();
             string text = "";
+            bool thereIsMinus = false;
 
             for (; i < code.Length; i++, col++)
             {
@@ -42,26 +43,34 @@ namespace Lexer
                     continue;
                 else if (code[i] == '\n')
                 {
-                    tokens.Add(new Token(TokenType.Symbol, "\n",(row,col)));
+                    if ((i - 1) >= 0 && code[i - 1] != '\n')
+                        tokens.Add(new Token(TokenType.Symbol, "\n",(row,col)));
                     col = 0;
                     row++;
+                    thereIsMinus = false;
                     continue;
                 }
                 else if (MatchNumber(code[i].ToString()))
                 {
                     tokens.Add(MatchString(MatchNumber, TokenType.Number));
+                    VerifyMinus(thereIsMinus,tokens);
+                    thereIsMinus = false;
                     continue;
                 }
                 else if (MatchWord(code[i].ToString()))
                 {
                     tokens.Add(MatchString(MatchWord, TokenType.Text));
+                    thereIsMinus = false;
                     continue;
                 }
                 else if (MatchOperator(code[i].ToString()))
                 {
+                    thereIsMinus = false;
                     Token op = MatchString(MatchOperator, TokenType.Operator);
                     if (operators.ContainsKey(op.Value))
                     {
+                        if(op.Value == "-")
+                            thereIsMinus = true;
                         tokens.Add(op);
                     }
                     else
@@ -71,14 +80,17 @@ namespace Lexer
                 else if (MatchSymbol(code[i].ToString()))
                 {
                     tokens.Add(MatchString(MatchSymbol, TokenType.Symbol));
+                    thereIsMinus = false;
                 }
                 else
                 {
+                    thereIsMinus = false;
                     errors.Add(new Error("Syntax error", (row, col)));
                 }
 
             }
-            DontLookThisFunction(tokens);
+            if (tokens.Count > 0 && tokens[tokens.Count - 1].Value != "\n")
+                tokens.Add(new Token(TokenType.Symbol, "\n", (row, col + 1)));
             return tokens;
         }
 
@@ -101,6 +113,22 @@ namespace Lexer
             i--;
             col--;
             return token;
+        }
+        void VerifyMinus(bool thereIsMinus, List<Token> tokens)
+        {
+            if (thereIsMinus)
+            {
+                if(tokens.Count - 3 >= 0)
+                {
+                    Token prevToken = tokens[tokens.Count - 3];
+                    if (prevToken.Type != TokenType.Text && prevToken.Type != TokenType.Number && prevToken.Value != ")")
+                    {
+                        tokens.RemoveAt(tokens.Count - 2);
+                        tokens[tokens.Count - 1].AddMinus();
+                        return;
+                    }
+                }
+            }
         }
         bool MatchNumber(string text) 
         {
@@ -129,43 +157,7 @@ namespace Lexer
         {
             return symbols.ContainsKey(symbol);
         }
-        void DontLookThisFunction(List<Token> tokens)
-        {
-            List<Token> tokenToRemove = new List<Token>();
-            Token firstToken = null;
-            Token secondToken = null;
-            bool endOfLine = false;
-            foreach (Token currentToken in tokens)
-            {
-                if (currentToken.Value == "\n")
-                {
-                    if(endOfLine)
-                        tokenToRemove.Add(currentToken);
-                    else
-                        endOfLine = true;
-                }
-                else
-                    endOfLine = false;
-
-                if (firstToken != null && secondToken != null && secondToken.Value == "-" &&
-                    (firstToken.Type != TokenType.Number && firstToken.Type != TokenType.Text && firstToken.Value != ")") &&
-                    currentToken.Type == TokenType.Number)
-                {
-                    tokenToRemove.Add(secondToken);
-                    currentToken.AddMinus();
-                }
-                firstToken = secondToken;
-                secondToken = currentToken;
-            }
-            if(secondToken != null && secondToken.Value != "\n")
-            {
-                tokens.Add(new Token(TokenType.Symbol, "\n", (row, col + 1)));
-            }
-            foreach (Token currentToken in tokenToRemove)
-            {
-                tokens.Remove(currentToken);
-            }
-        }
+        
         void RegisterAll()
         {
             operatorsParts.Add("&");

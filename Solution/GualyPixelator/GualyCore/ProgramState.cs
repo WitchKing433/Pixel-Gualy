@@ -145,10 +145,10 @@ namespace GualyCore
             return fullPath;
         }
 
-        public static string ImageToCode(string path)
+        public static string ImageToCode(string path, int imageMaxSize)
         {
             using var original = new Bitmap(path);
-            const int MAX = 200;
+            int MAX = imageMaxSize;
             Bitmap bmp = (original.Width > MAX || original.Height > MAX)
                 ? new Bitmap(MAX, MAX, PixelFormat.Format32bppArgb)
                 : new Bitmap(original);
@@ -175,38 +175,69 @@ namespace GualyCore
             sb.AppendLine("Spawn(0,0)");
 
             string prevColorName = null;
+            string currentColor = null;
+            int runLength = 0;
             int xDir = 1;
 
             for (int y = 0; y < size; y++)
             {
                 if (y > 0)
                 {
+                    // Nueva línea vertical
                     sb.AppendLine("DrawLine(0,1,1)");
                     xDir = -xDir;
                 }
 
                 int xStart = xDir > 0 ? 0 : size - 1;
-                for (int i = 0, x = xStart; i < size; i++, x += xDir)
+                int x = xStart;
+
+                for (int i = 0; i < size; i++, x += xDir)
                 {
                     int off = y * stride + x * 4;
                     byte b = pixels[off + 0];
                     byte g = pixels[off + 1];
                     byte r = pixels[off + 2];
-                    var c = Color.FromArgb(r, g, b);
+                    var color = Color.FromArgb(r, g, b);
 
-                    string name;
-                    if (argbToKnown.TryGetValue(c.ToArgb(), out var kc))
-                        name = kc.ToString();
-                    else
-                        name = GetNearestKnownColor(c).ToString();
+                    // Resuelve nombre del color
+                    string name = argbToKnown.TryGetValue(color.ToArgb(), out var kc)
+                        ? kc.ToString()
+                        : GetNearestKnownColor(color).ToString();
 
-                    if (name != prevColorName)
+                    if (currentColor == null)
                     {
-                        sb.AppendLine($@"Color(""{name}"")");
-                        prevColorName = name;
+                        currentColor = name;
+                        runLength = 1;
                     }
+                    else if (name == currentColor)
+                    {
+                        runLength++;
+                    }
+                    else
+                    {
+                        // Cambió el color: escribe Color() si es distinto del previo, y DrawLine(...)
+                        if (currentColor != prevColorName)
+                        {
+                            sb.AppendLine($@"Color(""{currentColor}"")");
+                            prevColorName = currentColor;
+                        }
+                        sb.AppendLine($"DrawLine({xDir},0,{runLength})");
+                        currentColor = name;
+                        runLength = 1;
+                    }
+                }
 
-                    sb.AppendLine($"DrawLine({xDir},0,1)");
+                // Al terminar la fila, escribe lo que quedó pendiente
+                if (runLength > 0)
+                {
+                    if (currentColor != prevColorName)
+                    {
+                        sb.AppendLine($@"Color(""{currentColor}"")");
+                        prevColorName = currentColor;
+                    }
+                    sb.AppendLine($"DrawLine({xDir},0,{runLength})");
+                    currentColor = null;
+                    runLength = 0;
                 }
             }
 

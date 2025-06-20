@@ -109,9 +109,9 @@ namespace Interpreter
             }
             return sErrors;
         }
-        public static string ImageToCode(string path)
+        public static string ImageToCode(string path, int imageMaxSize)
         {
-            return ProgramState.ImageToCode(path);
+            return ProgramState.ImageToCode(path, imageMaxSize);
         }
     }
 }
